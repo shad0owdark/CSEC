@@ -1,0 +1,820 @@
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  background: #f8fafc;
+  color: #222;
+}
+
+header {
+  background-image: url(bg.jpg);
+  color: #fff;
+  padding-bottom: 0; /* Enlève tout espace sous le hero */
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #3a7bd5;
+  color: #fff;
+  box-shadow: 0 2px 8px #3a7bd533;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 0 1.2rem 0;
+  margin: 0; /* Pas d'espace au-dessus */
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.25s, border-bottom 0.25s;
+  border-bottom: 2px solid transparent;
+  padding: 0.2rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+nav ul li:hover > a,
+nav ul li a:focus {
+  background: #e6f0fa;
+  color: #222;
+  border-bottom: 2px solid #fff;
+  border-radius: 6px 6px 0 0;
+}
+
+nav ul .submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  min-width: 220px;
+  box-shadow: 0 2px 8px #ffb34733;
+  border-radius: 0 0 10px 10px;
+  padding: 0.5rem 0;
+  z-index: 20;
+  flex-direction: column;
+  gap: 0;
+  text-align: center;
+}
+
+nav ul li:hover > .submenu,
+nav ul li:focus-within > .submenu {
+  display: flex;
+}
+
+nav ul .submenu li a {
+  color: #3a7bd5;
+  font-weight: 500;
+  padding: 0.7rem 1.2rem;
+  background: none;
+  border: none;
+  border-radius: 0;
+  font-size: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+nav ul .submenu li a:hover,
+nav ul .submenu li a:focus {
+  background: #fff3e0;
+  color: #222;
+  border-radius: 0;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  background: url(bg.jpg) center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0; /* Pas d'espace sous le hero */
+}
+
+.hero-overlay {
+  background: rgba(0,0,0,0.45);
+  padding: 3rem 2rem;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 24px #0008;
+}
+
+.hero p {
+  color: #fff;
+  font-size: 1.7rem;
+  text-shadow: 0 2px 12px #0008;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  background: #fff;
+  color: #ffb347;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cta:hover {
+  background: #ffb347;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.actus, .agenda {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #ffb34733;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.actus-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.actus-list article {
+  flex: 1 1 200px;
+  background: #e6f0fa;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-logo {
+  display: block;
+  margin: 0 auto 2rem auto;
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background: #3a7bd5;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.bandeau-financeurs {
+  background: #fff;
+  padding: 0.7rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px #3a7bd533;
+}
+
+.bandeau-financeurs img {
+  max-width: 90vw;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+/* Largeur accrue pour toutes les sections principales */
+main,
+section.agenda,
+section.actus,
+section.guide-rentree,
+section.facebook-embed,
+section.mot-president,
+section.orga-president,
+section.equipe-centre {
+  max-width: 1200px;
+  width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* Pour les containers internes si besoin */
+.guides-container,
+.actus-list,
+.equipe-secteurs {
+  max-width: 1100px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive : garde un peu de marge sur petits écrans */
+@media (max-width: 1300px) {
+  main,
+  section.agenda,
+  section.actus,
+  section.guide-rentree,
+  section.facebook-embed,
+  section.mot-president,
+  section.orga-president,
+  section.equipe-centre {
+    max-width: 98vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+}
+
+/* Responsive: menu en colonne sur mobile */
+@media (max-width: 800px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  nav ul .submenu {
+    position: static;
+    min-width: unset;
+    box-shadow: none;
+    border-radius: 0 0 10px 10px;
+  }
+  .facebook-feed-modern .fb-page,
+  .facebook-feed-modern iframe {
+    max-width: 98vw !important;
+    width: 100% !important;
+  }
+}
+.arrow {
+  font-size: 0.8em;
+  margin-left: 0.3em;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+/* Flèche qui pivote quand le menu est ouvert */
+nav ul li:hover > a .arrow,
+nav ul li:focus-within > a .arrow {
+  transform: rotate(180deg);
+}
+
+.guide-rentree {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background: #e6f0fa;
+  border-radius: 18px;
+  text-align: center;
+}
+.guide-rentree h2 {
+  color: #3a7bd5;
+  margin-bottom: 2rem;
+}
+.guides-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.guide-img {
+  max-width: 220px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #3a7bd533;
+}
+figure {
+  margin: 0;
+}
+figcaption {
+  margin-top: 0.7rem;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.modal-guide {
+  display: none;
+  position: fixed;
+  z-index: 1002;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30,40,60,0.85);
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+.modal-guide.open {
+  display: flex;
+}
+.modal-guide img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px #0008;
+  background: #fff;
+  padding: 1rem;
+}
+.modal-close {
+  position: absolute;
+  top: 2.5vh;
+  right: 3vw;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1003;
+  font-weight: bold;
+  text-shadow: 0 2px 8px #000a;
+  transition: color 0.2s;
+}
+.modal-close:hover {
+  color: #ff0000;
+}
+
+#calendar {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #3a7bd533;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+.fc .fc-toolbar-title {
+  color: #3a7bd5;
+  font-size: 1.5rem;
+}
+.fc-event, .fc-event-main {
+  cursor: pointer;
+}
+
+.fc-daygrid-day.fc-day-past {
+  background: #f0f0f0 !important;
+  color: #707070 !important;
+  opacity: 0.7;
+}
+
+.pastille-secteur {
+  display: inline-block;
+  font-size: 0.85em;
+  border-radius: 1em;
+  padding: 0.2em 0.8em;
+  margin-right: 0.5em;
+  margin-bottom: 0.2em;
+  vertical-align: middle;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+.pastille-ecosol { background: #3a7bd5; }
+.pastille-familles { background: #43a047; }
+.pastille-pij { background: #fbc02d; color: #222; }
+.pastille-cyber-base { background: #8e24aa; }
+.pastille-adultes { background: #e53935; }
+
+.mot-president {
+  max-width: 600px;
+  margin: 4rem auto 3rem auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px #0002;
+  padding: 2.5rem 2rem 2rem 2rem;
+  text-align: center;
+  position: relative;
+}
+.mot-president h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.1rem;
+  color: #3a7bd5;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+.mot-president blockquote {
+  margin: 0;
+  padding: 0;
+  font-size: 1.18rem;
+  color: #222;
+  font-style: italic;
+  line-height: 1.7;
+  border-left: 5px solid #3a7bd5;
+  background: #f7faff;
+  border-radius: 10px;
+  padding: 1.5rem 1.2rem 1.2rem 1.5rem;
+  box-shadow: 0 2px 12px #3a7bd511;
+}
+.mot-president blockquote footer {
+  margin-top: 1.5rem;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.orga-president {
+  max-width: 900px;
+  margin: 3rem auto 3rem auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px #0002;
+  padding: 2.5rem 2rem 2rem 2rem;
+  text-align: center;
+  position: relative;
+}
+.orga-president h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #e57373;
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+}
+.orga-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.orga-card {
+  min-width: 180px;
+  max-width: 220px;
+  background: #f7f7f7;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 1.2rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  border-left: 8px solid #e57373;
+  border-bottom: 4px solid #e5737322;
+  transition: transform 0.15s;
+}
+.orga-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px #0002;
+}
+.orga-president { border-left-color: #388e3c; }
+.orga-vice { border-left-color: #fbc02d; }
+.orga-tresorier { border-left-color: #4db6ac; }
+.orga-tresorier-adj { border-left-color: #e57373; }
+.orga-secretaire { border-left-color: #fbc02d; }
+.orga-secretaire-adj { border-left-color: #388e3c; }
+
+.orga-role {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+.orga-name {
+  font-size: 1.18rem;
+  font-weight: bold;
+  color: #222;
+  letter-spacing: 0.01em;
+}
+
+.orga-desc {
+  margin-top: 2rem;
+  font-size: 1.08rem;
+  color: #444;
+  font-style: italic;
+  background: #f7faff;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  display: inline-block;
+}
+
+.orga-tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.orga-level {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  position: relative;
+}
+
+.orga-level-1, .orga-level-2 {
+  margin-bottom: 0.5rem;
+}
+
+.orga-level-3 {
+  gap: 5rem;
+  margin-top: 0.5rem;
+}
+
+.orga-branch {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.orga-connector {
+  width: 2px;
+  height: 24px;
+  background: #e57373;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .orga-level-3 {
+    gap: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .orga-level-3 {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .orga-branch {
+    flex-direction: row;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+  .orga-card {
+    min-width: 120px;
+    max-width: 98vw;
+    padding: 1rem 0.5rem;
+  }
+}
+
+.equipe-centre {
+  max-width: 1100px;
+  margin: 4rem auto 3rem auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px #0002;
+  padding: 2.5rem 2rem 2rem 2rem;
+  text-align: center;
+  position: relative;
+}
+.equipe-centre h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.1rem;
+  color: #3a7bd5;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.02em;
+}
+.equipe-secteurs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem 2rem;
+}
+.equipe-bloc {
+  background: #f7faff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #3a7bd511;
+  padding: 1.2rem 1.2rem 1rem 1.2rem;
+  min-width: 220px;
+  max-width: 260px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.equipe-bloc h3 {
+  font-size: 1.15rem;
+  color: #e57373;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+}
+.equipe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+}
+.equipe-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px #0001;
+  padding: 0.7rem 0.6rem 0.5rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  border-left: 5px solid #3a7bd5;
+  border-bottom: 2px solid #e5737322;
+  transition: transform 0.12s;
+}
+.equipe-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px #3a7bd522;
+}
+.equipe-nom {
+  font-size: 1.08rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.1rem;
+}
+.equipe-role {
+  font-size: 0.98rem;
+  color: #3a7bd5;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .equipe-secteurs {
+    gap: 1.5rem 1rem;
+  }
+  .equipe-bloc {
+    min-width: 180px;
+    max-width: 98vw;
+    padding: 1rem 0.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .equipe-secteurs {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem 0;
+  }
+}
+.facebook-embed {
+  max-width: 900px;
+  margin: 2.5rem auto 2rem auto;
+  text-align: center;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px #0001;
+  padding: 2rem 1rem 2.2rem 1rem;
+}
+.facebook-embed-modern {
+  max-width: 700px;
+  margin: 3rem auto 2.5rem auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px #1877f322, 0 1.5px 8px #0001;
+  padding: 0 0 2rem 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.facebook-banner-top {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: linear-gradient(90deg, #1877f3 80%, #3a7bd5 100%);
+  color: #fff;
+  padding: 2.2rem 2rem 2.2rem 2rem;
+  border-radius: 18px 18px 0 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.facebook-icon-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff2;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.facebook-banner-top h3 {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.01em;
+  font-weight: bold;
+}
+.facebook-follow-btn {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  color: #1877f3 !important;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 0.4em 1em;
+  text-decoration: none;
+  font-size: 1.08rem;
+  margin-top: 0.3em;
+  box-shadow: 0 2px 8px #1877f322;
+  transition: background 0.2s, color 0.2s;
+}
+.facebook-follow-btn:hover {
+  background: #e3f0ff;
+  color: #145db2 !important;
+}
+
+/* Agrandit le conteneur de l'embed Facebook */
+.facebook-feed-modern {
+  background: #f7faff;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+
+.facebook-feed-modern .fb-page {
+  width: 100% !important;
+  min-width: 320px !important;
+  max-width: 700px !important;
+  margin: 0 auto !important;
+  display: flex;
+  justify-content: center;
+}
+
+.facebook-feed-modern iframe {
+  width: 100% !important;
+  min-width: 320px !important;
+  max-width: 700px !important;
+  margin: 0 auto !important;
+  display: block;
+}
+
+.btn-inscription {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7em 1.5em;
+  background: #3a7bd5;
+  color: #fff !important;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+.btn-inscription:hover {
+  background: #145db2;
+}
+
+.modal-event {
+  display: none;
+  position: fixed;
+  z-index: 1002;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30,40,60,0.85);
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+.modal-event.open {
+  display: flex;
+}
+.modal-event-content {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px #0008;
+  padding: 2rem 2.2rem;
+  max-width: 95vw;
+  max-height: 85vh;
+  overflow-y: auto;
+  color: #222;
+  position: relative;
+}
+.facebook-feed-modern iframe,
+.guide-img {
+  cursor: pointer;
+}

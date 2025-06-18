@@ -1,3 +1,25 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+  background: #f7faff;
+  text-align: center;
+  padding: 1.2em 0 0.7em 0;
+  color: #3a7bd5;
+  font-size: 1.1em;
+}
+
 body {
   font-family: 'Montserrat', Arial, sans-serif;
   margin: 0;
@@ -726,22 +748,26 @@ figcaption {
   font-weight: bold;
 }
 .facebook-follow-btn {
+  background: #fff;
+  color: #1877f3;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.7em 1.5em;
+  text-decoration: none;
+  font-size: 1.1rem;
   display: inline-flex;
   align-items: center;
-  background: #fff;
-  color: #1877f3 !important;
-  font-weight: bold;
-  border-radius: 6px;
-  padding: 0.4em 1em;
-  text-decoration: none;
-  font-size: 1.08rem;
-  margin-top: 0.3em;
+  transition: background 0.2s;
   box-shadow: 0 2px 8px #1877f322;
-  transition: background 0.2s, color 0.2s;
 }
 .facebook-follow-btn:hover {
-  background: #e3f0ff;
-  color: #145db2 !important;
+  background: #145db2;
+  color: #fff
+}
+.sel-facebook-follow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
 }
 
 /* Agrandit le conteneur de l'embed Facebook */
@@ -817,4 +843,451 @@ figcaption {
 .facebook-feed-modern iframe,
 .guide-img {
   cursor: pointer;
+}
+.home {
+  display: block;
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #145db2;
+  margin: 2em auto 1.2em auto;
+  max-width: 800px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 8px #1877f322;
+}
+/* Ajoute à styles.css */
+.vestiaire-solidaire {
+  background: #fff8fc;
+  border: 3px dashed #b48be3;
+  border-radius: 18px;
+  padding: 2.2em 1.5em 1.5em 1.5em;
+  margin: 2em auto 2em auto;
+  max-width: 600px;
+  box-shadow: 0 4px 24px #b48be322;
+  text-align: center;
+}
+.vestiaire-solidaire h2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #3a7bd5;
+  font-size: 2.1rem;
+  margin-bottom: 0.3em;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.vestiaire-solidaire .occasion {
+  color: #1877f3;
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-left: 0.2em;
+}
+.vestiaire-desc {
+  font-size: 1.2rem;
+  color: #a06cc7;
+  margin-bottom: 1.2em;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.vestiaire-info {
+  display: block;
+  font-size: 1rem;
+  color: #444;
+  margin-top: 0.6em;
+}
+.vestiaire-horaires h3 {
+  color: #1877f3;
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+.vestiaire-horaires ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.7em 0;
+}
+.vestiaire-horaires li {
+  font-size: 1.08rem;
+  color: #333;
+  margin-bottom: 0.2em;
+}
+.vestiaire-entree {
+  color: #e6a23c;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.7em;
+  letter-spacing: 0.01em;
+}
+.vestiaire-entree .arrow {
+  font-size: 1.3em;
+  vertical-align: middle;
+  margin-left: 0.2em;
+}
+/* Ajoute à styles.css */
+.footer-contact {
+  text-align: center;
+  margin-bottom: 1.5em;
+  background: #3a7bd5;
+  border-radius: 12px;
+  padding: 0.1em 0.1em 0.1em 0.1em;
+  box-shadow: 0 2px 12px #1877f322;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-contact h3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #fff;
+  margin-bottom: 0.7em;
+}
+.footer-contact-info {
+  color: #ffffff;
+  font-size: 1.13rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin-bottom: 0.7em;
+  line-height: 1.6;
+}
+.footer-contact-info strong {
+  font-size: 1.18rem;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 0.2em;
+}
+.footer-icon {
+  margin-right: 0.3em;
+  font-size: 1.1em;
+  vertical-align: middle;
+}
+.footer-contact-info a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  word-break: break-all;
+}
+.footer-contact-info a:hover {
+  text-decoration: underline;
+}
+.footer-actus {
+  display: block;
+  color: #444;
+  font-size: 1em;
+  margin: 0.7em 0 0.2em 0;
+}
+/* Ajoute à styles.css */
+.volontariat-hero {
+  position: relative;
+  background: linear-gradient(120deg, #f3ff46 0%, #f4845f 50%, #3a7bd5 100%);
+  border-radius: 28px;
+  box-shadow: 0 8px 40px #3a7bd555, 0 0 0 8px #fff3 inset;
+  padding: 3em 2.2em 2.5em 2.2em;
+  margin: 3em auto 2em auto;
+  max-width: 1200px;
+  color: #fff;
+  overflow: hidden;
+  z-index: 1;
+}
+.volontariat-bg-glow {
+  position: absolute;
+  top: -80px; left: 50%; transform: translateX(-50%);
+  width: 600px; height: 220px;
+  background: radial-gradient(circle at 50% 40%, #fff7 0%, #fff0 80%);
+  filter: blur(18px);
+  opacity: 0.7;
+  z-index: 0;
+  pointer-events: none;
+}
+.volontariat-hero h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.2em;
+  margin-top: 0;
+  position: relative;
+  z-index: 2;
+}
+.volontariat-gradient {
+  background: linear-gradient(90deg, #fff 10%, #fff6ec 40%, #f4845f 70%, #e5f0ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 2px 16px #fff8);
+  text-shadow: 0 4px 24px #0003;
+}
+.volontariat-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #fff6 0%, #f7b267cc 60%, #3a7bd5cc 100%);
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 1.2em;
+  padding: 0.25em 1.1em;
+  margin-left: 0.7em;
+  vertical-align: middle;
+  box-shadow: 0 2px 12px #fff7;
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 6px #fff9;
+}
+.volontariat-intro {
+  position: relative;
+  z-index: 2;
+}
+.volontariat-intro p {
+  font-size: 1.22rem;
+  line-height: 1.8;
+  color: #fff;
+  margin-bottom: 1.2em;
+  text-shadow: 0 2px 16px #0002, 0 1px 0 #fff3;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.volontariat-info {
+  background: rgba(255,255,255,0.18);
+  border-left: 6px solid #fff;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.13rem;
+  font-weight: 600;
+  margin: 1.5em 0 1.5em 0;
+  padding: 1.1em 1.3em;
+  box-shadow: 0 4px 24px #fff2;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+}
+.volontariat-info-icon {
+  font-size: 1.6em;
+  filter: drop-shadow(0 2px 8px #fff7);
+}
+@media (max-width: 700px) {
+  .volontariat-hero {
+    padding: 1.2em 0.5em 1.2em 0.5em;
+    max-width: 98vw;
+  }
+  .volontariat-hero h2 {
+    font-size: 2rem;
+  }
+  .volontariat-intro p {
+    font-size: 1.05rem;
+  }
+}
+.volontaires-list {
+  margin: 2.5em auto 1.5em auto;
+  max-width: 500px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #3a7bd522;
+  padding: 1.7em 1em 1.3em 1em;
+  text-align: center;
+  position: relative;
+}
+.volontaires-list-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3a7bd5;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.1em;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-shadow: 0 2px 8px #fff8;
+}
+.volontaires-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2.2em;
+  flex-wrap: wrap;
+}
+.volontaires-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.13rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.7em;
+  transition: transform 0.18s;
+}
+.volontaires-list li:hover {
+  transform: translateY(-7px) scale(1.07) rotate(-2deg);
+  box-shadow: 0 6px 24px #3a7bd533;
+}
+.volontaire-avatar {
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+  filter: drop-shadow(0 2px 8px #3a7bd522);
+}
+.volontaire-name {
+  font-size: 1.13em;
+  letter-spacing: 0.01em;
+  color: #3a7bd5;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.facebook-sel-follow-btn {
+  background: #1877f3;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.7em 1.5em;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px #1877f322;
+}
+.facebook-sel-follow-btn:hover {
+  background: #f1f1f1;
+  color: #145db2
+}
+.sel-rules {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #3a7bd533;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.parentalite-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.parentalite-section h2.section-title {
+  color: #3a7bd5;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.parentalite-section h2.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #3a7bd5;
+}
+
+.parentalite-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  color: #444;
+}
+
+.parentalite-objectifs {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.parentalite-objectifs h3 {
+  color: #3a7bd5;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.parentalite-objectifs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.parentalite-objectifs li {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.parentalite-objectifs li:before {
+  content: '•';
+  color: #3a7bd5;
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+}
+
+.parentalite-reseau {
+  margin-bottom: 3rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.parentalite-contact {
+  background: #3a7bd5;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.parentalite-contact h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.contact-info {
+  line-height: 1.8;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+  transition: border-color 0.3s;
+}
+
+.contact-info a:hover {
+  border-color: transparent;
+}
+
+.indev {
+  text-align: center;
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.indev h1 {
+  color: #3a7bd5;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.indev p {
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.indev a {
+  color: #3a7bd5;
+  text-decoration: none;
+  border-bottom: 1px dotted #3a7bd5;
+  transition: border-color 0.3s;
+}
+
+.indev a:hover {
+  border-color: transparent;
 }

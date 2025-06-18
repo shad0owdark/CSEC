@@ -34,7 +34,6 @@
             <li><a href="sel-du-cesc.html">Le SEL du CESC</a></li>
             <li><a href="service-civique.html">Service civique</a></li>
             <li><a href="reseau-parentalite.html">Réseau parentalité</a></li>
-            <li><a href="centres-sociaux-connectes.html">Centres sociaux connectés</a></li>
           </ul>
         </li>
         <li>
@@ -59,6 +58,15 @@
     </nav>
   </header>
   <main>
+    <section class="home">
+      <h2>Bienvenue à l'Espace Carnot</h2>
+      <p>Votre centre social de proximité, dédié à la vie des habitants et à la création de liens sociaux.</p>
+      <p>Découvrez nos activités, services et événements pour tous les âges.</p>
+      <p>Pour toute question, n'hésitez pas à nous contacter ou à venir nous voir directement.</p>
+      <p>Nous sommes là pour vous aider et vous accompagner dans vos démarches.</p>
+      <p>Rejoignez-nous pour construire ensemble un quartier solidaire et dynamique !</p>
+      <p>Pour plus d'informations, consultez le <a href="le-mot-du-president.html">mot du président</a>.</p>
+    </section>
     <section class="actus">
       <h2>Actualités</h2>
       <div class="actus-list">
@@ -76,7 +84,7 @@
       <h2>Agenda</h2>
       <div id="calendar"></div>
     </section>
-  </main>
+
   <section class="guide-rentree">
     <h2>Mon guide pratique de la rentrée 2024/2025</h2>
     <div class="guides-container">
@@ -89,17 +97,7 @@
     </div>
   </section>
 
-  <!-- Place les modales ici, AVANT la section Facebook et le footer -->
-  <div id="modal-guide" class="modal-guide">
-    <span class="modal-close" id="modal-close">&times;</span>
-    <img id="modal-img" src="" alt="Guide en grand">
-  </div>
-  <div id="modal-event" class="modal-event">
-    <span class="modal-close" id="modal-event-close">&times;</span>
-    <div class="modal-event-content" id="modal-event-content"></div>
-  </div>
-
-  <section class="facebook-embed-modern">
+    <section class="facebook-embed-modern">
     <div class="facebook-banner-top">
       <span class="facebook-icon-large">
         <svg viewBox="0 0 32 32" width="48" height="48" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -136,9 +134,27 @@
   </section>
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v19.0"></script>
+
+  <div id="modal-guide" class="modal-guide">
+    <span class="modal-close" id="modal-close">&times;</span>
+    <img id="modal-img" src="" alt="Guide en grand">
+  </div>
+  <div id="modal-event" class="modal-event">
+    <span class="modal-close" id="modal-event-close">&times;</span>
+    <div class="modal-event-content" id="modal-event-content"></div>
+  </div>
+
+  </main>
+
   <footer>
-    <p>&copy; 2025 Centre Social Espace Carnot
-    </p>
+    <div class="footer-contact">
+      <h3>NOUS CONTACTER</h3>
+      <div class="footer-contact-info">
+        <span class="footer-icon">📍</span> 46 Avenue du Général San Martin<br>
+        <span class="footer-icon">📞</span> Tel : <a href="tel:0321103110">03.21.10.31.10</a><br>
+      </div>
+    </div>
+    <p>&copy; 2025 Centre Social Espace Carnot</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
@@ -315,7 +331,6 @@ function showEventModal(event) {
   </script>
 </body>
 </html>
-
 <!-- 
 
 

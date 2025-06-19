@@ -1,16 +1,20 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
+
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
 main {
   flex: 1 0 auto;
 }
+
 footer {
   flex-shrink: 0;
   background: #f7faff;
@@ -30,7 +34,8 @@ body {
 header {
   background-image: url(bg.jpg);
   color: #fff;
-  padding-bottom: 0; /* Enlève tout espace sous le hero */
+  padding-bottom: 0;
+  /* Enlève tout espace sous le hero */
 }
 
 nav {
@@ -44,7 +49,8 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 1.2rem 0 1.2rem 0;
-  margin: 0; /* Pas d'espace au-dessus */
+  margin: 0;
+  /* Pas d'espace au-dessus */
 }
 
 .logo {
@@ -81,7 +87,7 @@ nav ul li a {
   gap: 0.5em;
 }
 
-nav ul li:hover > a,
+nav ul li:hover>a,
 nav ul li a:focus {
   background: #e6f0fa;
   color: #222;
@@ -105,8 +111,8 @@ nav ul .submenu {
   text-align: center;
 }
 
-nav ul li:hover > .submenu,
-nav ul li:focus-within > .submenu {
+nav ul li:hover>.submenu,
+nav ul li:focus-within>.submenu {
   display: flex;
 }
 
@@ -137,11 +143,12 @@ nav ul .submenu li a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0; /* Pas d'espace sous le hero */
+  margin-bottom: 0;
+  /* Pas d'espace sous le hero */
 }
 
 .hero-overlay {
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
   padding: 3rem 2rem;
   border-radius: 24px;
   text-align: center;
@@ -184,7 +191,8 @@ main {
   padding: 0 1rem;
 }
 
-.actus, .agenda {
+.actus,
+.agenda {
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 2px 8px #ffb34733;
@@ -267,6 +275,7 @@ section.equipe-centre {
 
 /* Responsive : garde un peu de marge sur petits écrans */
 @media (max-width: 1300px) {
+
   main,
   section.agenda,
   section.actus,
@@ -287,21 +296,25 @@ section.equipe-centre {
     flex-direction: column;
     gap: 0.5rem;
   }
+
   nav ul li {
     width: 100%;
   }
+
   nav ul .submenu {
     position: static;
     min-width: unset;
     box-shadow: none;
     border-radius: 0 0 10px 10px;
   }
+
   .facebook-feed-modern .fb-page,
   .facebook-feed-modern iframe {
     max-width: 98vw !important;
     width: 100% !important;
   }
 }
+
 .arrow {
   font-size: 0.8em;
   margin-left: 0.3em;
@@ -310,8 +323,8 @@ section.equipe-centre {
 }
 
 /* Flèche qui pivote quand le menu est ouvert */
-nav ul li:hover > a .arrow,
-nav ul li:focus-within > a .arrow {
+nav ul li:hover>a .arrow,
+nav ul li:focus-within>a .arrow {
   transform: rotate(180deg);
 }
 
@@ -323,25 +336,30 @@ nav ul li:focus-within > a .arrow {
   border-radius: 18px;
   text-align: center;
 }
+
 .guide-rentree h2 {
   color: #3a7bd5;
   margin-bottom: 2rem;
 }
+
 .guides-container {
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
+
 .guide-img {
   max-width: 220px;
   width: 100%;
   border-radius: 12px;
   box-shadow: 0 2px 8px #3a7bd533;
 }
+
 figure {
   margin: 0;
 }
+
 figcaption {
   margin-top: 0.7rem;
   font-size: 1.1rem;
@@ -356,14 +374,16 @@ figcaption {
   top: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(30,40,60,0.85);
+  background: rgba(30, 40, 60, 0.85);
   justify-content: center;
   align-items: center;
   transition: opacity 0.2s;
 }
+
 .modal-guide.open {
   display: flex;
 }
+
 .modal-guide img {
   max-width: 90vw;
   max-height: 85vh;
@@ -372,6 +392,7 @@ figcaption {
   background: #fff;
   padding: 1rem;
 }
+
 .modal-close {
   position: absolute;
   top: 2.5vh;
@@ -384,6 +405,7 @@ figcaption {
   text-shadow: 0 2px 8px #000a;
   transition: color 0.2s;
 }
+
 .modal-close:hover {
   color: #ff0000;
 }
@@ -395,11 +417,14 @@ figcaption {
   padding: 1.5rem;
   margin-top: 2rem;
 }
+
 .fc .fc-toolbar-title {
   color: #3a7bd5;
   font-size: 1.5rem;
 }
-.fc-event, .fc-event-main {
+
+.fc-event,
+.fc-event-main {
   cursor: pointer;
 }
 
@@ -421,11 +446,27 @@ figcaption {
   letter-spacing: 0.03em;
   color: #fff;
 }
-.pastille-ecosol { background: #3a7bd5; }
-.pastille-familles { background: #43a047; }
-.pastille-pij { background: #fbc02d; color: #222; }
-.pastille-cyber-base { background: #8e24aa; }
-.pastille-adultes { background: #e53935; }
+
+.pastille-ecosol {
+  background: #3a7bd5;
+}
+
+.pastille-familles {
+  background: #43a047;
+}
+
+.pastille-pij {
+  background: #fbc02d;
+  color: #222;
+}
+
+.pastille-cyber-base {
+  background: #8e24aa;
+}
+
+.pastille-adultes {
+  background: #e53935;
+}
 
 .mot-president {
   max-width: 600px;
@@ -437,6 +478,7 @@ figcaption {
   text-align: center;
   position: relative;
 }
+
 .mot-president h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.1rem;
@@ -444,6 +486,7 @@ figcaption {
   margin-bottom: 1.5rem;
   letter-spacing: 0.02em;
 }
+
 .mot-president blockquote {
   margin: 0;
   padding: 0;
@@ -457,6 +500,7 @@ figcaption {
   padding: 1.5rem 1.2rem 1.2rem 1.5rem;
   box-shadow: 0 2px 12px #3a7bd511;
 }
+
 .mot-president blockquote footer {
   margin-top: 1.5rem;
   font-style: normal;
@@ -475,6 +519,7 @@ figcaption {
   text-align: center;
   position: relative;
 }
+
 .orga-president h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
@@ -482,6 +527,7 @@ figcaption {
   margin-bottom: 2rem;
   letter-spacing: 0.02em;
 }
+
 .orga-grid {
   display: flex;
   flex-wrap: wrap;
@@ -489,6 +535,7 @@ figcaption {
   gap: 2rem 1.5rem;
   margin-bottom: 1.5rem;
 }
+
 .orga-card {
   min-width: 180px;
   max-width: 220px;
@@ -505,16 +552,35 @@ figcaption {
   border-bottom: 4px solid #e5737322;
   transition: transform 0.15s;
 }
+
 .orga-card:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 8px 24px #0002;
 }
-.orga-president { border-left-color: #388e3c; }
-.orga-vice { border-left-color: #fbc02d; }
-.orga-tresorier { border-left-color: #4db6ac; }
-.orga-tresorier-adj { border-left-color: #e57373; }
-.orga-secretaire { border-left-color: #fbc02d; }
-.orga-secretaire-adj { border-left-color: #388e3c; }
+
+.orga-president {
+  border-left-color: #388e3c;
+}
+
+.orga-vice {
+  border-left-color: #fbc02d;
+}
+
+.orga-tresorier {
+  border-left-color: #4db6ac;
+}
+
+.orga-tresorier-adj {
+  border-left-color: #e57373;
+}
+
+.orga-secretaire {
+  border-left-color: #fbc02d;
+}
+
+.orga-secretaire-adj {
+  border-left-color: #388e3c;
+}
 
 .orga-role {
   font-size: 1.05rem;
@@ -523,6 +589,7 @@ figcaption {
   margin-bottom: 0.5rem;
   letter-spacing: 0.01em;
 }
+
 .orga-name {
   font-size: 1.18rem;
   font-weight: bold;
@@ -558,7 +625,8 @@ figcaption {
   position: relative;
 }
 
-.orga-level-1, .orga-level-2 {
+.orga-level-1,
+.orga-level-2 {
   margin-bottom: 0.5rem;
 }
 
@@ -587,16 +655,19 @@ figcaption {
     gap: 2rem;
   }
 }
+
 @media (max-width: 700px) {
   .orga-level-3 {
     flex-direction: column;
     gap: 1.5rem;
   }
+
   .orga-branch {
     flex-direction: row;
     gap: 1.2rem;
     justify-content: center;
   }
+
   .orga-card {
     min-width: 120px;
     max-width: 98vw;
@@ -614,6 +685,7 @@ figcaption {
   text-align: center;
   position: relative;
 }
+
 .equipe-centre h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.1rem;
@@ -621,12 +693,14 @@ figcaption {
   margin-bottom: 2.5rem;
   letter-spacing: 0.02em;
 }
+
 .equipe-secteurs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2.5rem 2rem;
 }
+
 .equipe-bloc {
   background: #f7faff;
   border-radius: 14px;
@@ -639,6 +713,7 @@ figcaption {
   flex-direction: column;
   align-items: center;
 }
+
 .equipe-bloc h3 {
   font-size: 1.15rem;
   color: #e57373;
@@ -647,12 +722,14 @@ figcaption {
   font-weight: bold;
   letter-spacing: 0.01em;
 }
+
 .equipe-list {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
   width: 100%;
 }
+
 .equipe-card {
   background: #fff;
   border-radius: 8px;
@@ -666,32 +743,38 @@ figcaption {
   border-bottom: 2px solid #e5737322;
   transition: transform 0.12s;
 }
+
 .equipe-card:hover {
   transform: scale(1.04);
   box-shadow: 0 4px 16px #3a7bd522;
 }
+
 .equipe-nom {
   font-size: 1.08rem;
   font-weight: bold;
   color: #222;
   margin-bottom: 0.1rem;
 }
+
 .equipe-role {
   font-size: 0.98rem;
   color: #3a7bd5;
   font-weight: 500;
   text-align: center;
 }
+
 @media (max-width: 900px) {
   .equipe-secteurs {
     gap: 1.5rem 1rem;
   }
+
   .equipe-bloc {
     min-width: 180px;
     max-width: 98vw;
     padding: 1rem 0.5rem;
   }
 }
+
 @media (max-width: 700px) {
   .equipe-secteurs {
     flex-direction: column;
@@ -699,6 +782,7 @@ figcaption {
     gap: 1.2rem 0;
   }
 }
+
 .facebook-embed {
   max-width: 900px;
   margin: 2.5rem auto 2rem auto;
@@ -708,6 +792,7 @@ figcaption {
   box-shadow: 0 2px 16px #0001;
   padding: 2rem 1rem 2.2rem 1rem;
 }
+
 .facebook-embed-modern {
   max-width: 700px;
   margin: 3rem auto 2.5rem auto;
@@ -720,6 +805,7 @@ figcaption {
   flex-direction: column;
   align-items: stretch;
 }
+
 .facebook-banner-top {
   display: flex;
   align-items: center;
@@ -731,6 +817,7 @@ figcaption {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .facebook-icon-large {
   display: flex;
   align-items: center;
@@ -739,6 +826,7 @@ figcaption {
   border-radius: 50%;
   padding: 0.5rem;
 }
+
 .facebook-banner-top h3 {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -747,6 +835,7 @@ figcaption {
   letter-spacing: 0.01em;
   font-weight: bold;
 }
+
 .facebook-follow-btn {
   background: #fff;
   color: #1877f3;
@@ -760,10 +849,12 @@ figcaption {
   transition: background 0.2s;
   box-shadow: 0 2px 8px #1877f322;
 }
+
 .facebook-follow-btn:hover {
   background: #145db2;
   color: #fff
 }
+
 .sel-facebook-follow {
   display: flex;
   justify-content: center;
@@ -809,6 +900,7 @@ figcaption {
   font-size: 1.1rem;
   transition: background 0.2s;
 }
+
 .btn-inscription:hover {
   background: #145db2;
 }
@@ -821,14 +913,16 @@ figcaption {
   top: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(30,40,60,0.85);
+  background: rgba(30, 40, 60, 0.85);
   justify-content: center;
   align-items: center;
   transition: opacity 0.2s;
 }
+
 .modal-event.open {
   display: flex;
 }
+
 .modal-event-content {
   background: #fff;
   border-radius: 12px;
@@ -840,10 +934,12 @@ figcaption {
   color: #222;
   position: relative;
 }
+
 .facebook-feed-modern iframe,
 .guide-img {
   cursor: pointer;
 }
+
 .home {
   display: block;
   text-align: center;
@@ -856,6 +952,7 @@ figcaption {
   letter-spacing: 0.02em;
   text-shadow: 0 2px 8px #1877f322;
 }
+
 /* Ajoute à styles.css */
 .vestiaire-solidaire {
   background: #fff8fc;
@@ -867,6 +964,7 @@ figcaption {
   box-shadow: 0 4px 24px #b48be322;
   text-align: center;
 }
+
 .vestiaire-solidaire h2 {
   font-family: 'Montserrat', Arial, sans-serif;
   color: #3a7bd5;
@@ -875,6 +973,7 @@ figcaption {
   font-weight: 700;
   letter-spacing: 0.01em;
 }
+
 .vestiaire-solidaire .occasion {
   color: #1877f3;
   font-size: 1.1em;
@@ -882,34 +981,40 @@ figcaption {
   font-weight: 600;
   margin-left: 0.2em;
 }
+
 .vestiaire-desc {
   font-size: 1.2rem;
   color: #a06cc7;
   margin-bottom: 1.2em;
   font-family: 'Montserrat', Arial, sans-serif;
 }
+
 .vestiaire-info {
   display: block;
   font-size: 1rem;
   color: #444;
   margin-top: 0.6em;
 }
+
 .vestiaire-horaires h3 {
   color: #1877f3;
   font-size: 1.1rem;
   margin-bottom: 0.5em;
   font-weight: 600;
 }
+
 .vestiaire-horaires ul {
   list-style: none;
   padding: 0;
   margin: 0 0 0.7em 0;
 }
+
 .vestiaire-horaires li {
   font-size: 1.08rem;
   color: #333;
   margin-bottom: 0.2em;
 }
+
 .vestiaire-entree {
   color: #e6a23c;
   font-size: 1.1rem;
@@ -917,11 +1022,13 @@ figcaption {
   margin-top: 0.7em;
   letter-spacing: 0.01em;
 }
+
 .vestiaire-entree .arrow {
   font-size: 1.3em;
   vertical-align: middle;
   margin-left: 0.2em;
 }
+
 /* Ajoute à styles.css */
 .footer-contact {
   text-align: center;
@@ -934,6 +1041,7 @@ figcaption {
   margin-left: auto;
   margin-right: auto;
 }
+
 .footer-contact h3 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 1.5rem;
@@ -942,6 +1050,7 @@ figcaption {
   color: #fff;
   margin-bottom: 0.7em;
 }
+
 .footer-contact-info {
   color: #ffffff;
   font-size: 1.13rem;
@@ -949,32 +1058,38 @@ figcaption {
   margin-bottom: 0.7em;
   line-height: 1.6;
 }
+
 .footer-contact-info strong {
   font-size: 1.18rem;
   color: #ffffff;
   display: block;
   margin-bottom: 0.2em;
 }
+
 .footer-icon {
   margin-right: 0.3em;
   font-size: 1.1em;
   vertical-align: middle;
 }
+
 .footer-contact-info a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
   word-break: break-all;
 }
+
 .footer-contact-info a:hover {
   text-decoration: underline;
 }
+
 .footer-actus {
   display: block;
   color: #444;
   font-size: 1em;
   margin: 0.7em 0 0.2em 0;
 }
+
 /* Ajoute à styles.css */
 .volontariat-hero {
   position: relative;
@@ -988,16 +1103,21 @@ figcaption {
   overflow: hidden;
   z-index: 1;
 }
+
 .volontariat-bg-glow {
   position: absolute;
-  top: -80px; left: 50%; transform: translateX(-50%);
-  width: 600px; height: 220px;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 220px;
   background: radial-gradient(circle at 50% 40%, #fff7 0%, #fff0 80%);
   filter: blur(18px);
   opacity: 0.7;
   z-index: 0;
   pointer-events: none;
 }
+
 .volontariat-hero h2 {
   text-align: center;
   font-size: 3rem;
@@ -1009,6 +1129,7 @@ figcaption {
   position: relative;
   z-index: 2;
 }
+
 .volontariat-gradient {
   background: linear-gradient(90deg, #fff 10%, #fff6ec 40%, #f4845f 70%, #e5f0ff 100%);
   -webkit-background-clip: text;
@@ -1017,6 +1138,7 @@ figcaption {
   filter: drop-shadow(0 2px 16px #fff8);
   text-shadow: 0 4px 24px #0003;
 }
+
 .volontariat-badge {
   display: inline-block;
   background: linear-gradient(90deg, #fff6 0%, #f7b267cc 60%, #3a7bd5cc 100%);
@@ -1031,10 +1153,12 @@ figcaption {
   letter-spacing: 0.03em;
   text-shadow: 0 1px 6px #fff9;
 }
+
 .volontariat-intro {
   position: relative;
   z-index: 2;
 }
+
 .volontariat-intro p {
   font-size: 1.22rem;
   line-height: 1.8;
@@ -1043,8 +1167,9 @@ figcaption {
   text-shadow: 0 2px 16px #0002, 0 1px 0 #fff3;
   font-family: 'Montserrat', Arial, sans-serif;
 }
+
 .volontariat-info {
-  background: rgba(255,255,255,0.18);
+  background: rgba(255, 255, 255, 0.18);
   border-left: 6px solid #fff;
   border-radius: 12px;
   color: #fff;
@@ -1058,32 +1183,38 @@ figcaption {
   align-items: center;
   gap: 0.7em;
 }
+
 .volontariat-info-icon {
   font-size: 1.6em;
   filter: drop-shadow(0 2px 8px #fff7);
 }
+
 @media (max-width: 700px) {
   .volontariat-hero {
     padding: 1.2em 0.5em 1.2em 0.5em;
     max-width: 98vw;
   }
+
   .volontariat-hero h2 {
     font-size: 2rem;
   }
+
   .volontariat-intro p {
     font-size: 1.05rem;
   }
 }
+
 .volontaires-list {
   margin: 2.5em auto 1.5em auto;
   max-width: 500px;
-  background: rgba(255,255,255,0.85);
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 18px;
   box-shadow: 0 4px 24px #3a7bd522;
   padding: 1.7em 1em 1.3em 1em;
   text-align: center;
   position: relative;
 }
+
 .volontaires-list-title {
   font-size: 1.5rem;
   font-weight: 700;
@@ -1093,6 +1224,7 @@ figcaption {
   font-family: 'Montserrat', Arial, sans-serif;
   text-shadow: 0 2px 8px #fff8;
 }
+
 .volontaires-list ul {
   list-style: none;
   padding: 0;
@@ -1102,6 +1234,7 @@ figcaption {
   gap: 2.2em;
   flex-wrap: wrap;
 }
+
 .volontaires-list li {
   display: flex;
   flex-direction: column;
@@ -1112,21 +1245,25 @@ figcaption {
   margin-bottom: 0.7em;
   transition: transform 0.18s;
 }
+
 .volontaires-list li:hover {
   transform: translateY(-7px) scale(1.07) rotate(-2deg);
   box-shadow: 0 6px 24px #3a7bd533;
 }
+
 .volontaire-avatar {
   font-size: 2.5em;
   margin-bottom: 0.3em;
   filter: drop-shadow(0 2px 8px #3a7bd522);
 }
+
 .volontaire-name {
   font-size: 1.13em;
   letter-spacing: 0.01em;
   color: #3a7bd5;
   font-family: 'Montserrat', Arial, sans-serif;
 }
+
 .facebook-sel-follow-btn {
   background: #1877f3;
   color: #fff;
@@ -1140,10 +1277,12 @@ figcaption {
   transition: background 0.2s;
   box-shadow: 0 2px 8px #1877f322;
 }
+
 .facebook-sel-follow-btn:hover {
   background: #f1f1f1;
   color: #145db2
 }
+
 .sel-rules {
   background: #fff;
   border-radius: 12px;
@@ -1305,6 +1444,7 @@ figcaption {
   max-width: 420px;
   text-align: center;
 }
+
 .pause-cartable-title {
   font-family: 'Montserrat', cursive, Arial, sans-serif;
   color: #b94a2c;
@@ -1313,18 +1453,21 @@ figcaption {
   letter-spacing: 0.03em;
   font-weight: 700;
 }
+
 .pause-cartable-content h3 {
   color: #222;
   font-size: 1.25rem;
   margin: 1.2rem 0 0.7rem 0;
   font-family: 'Montserrat', Arial, sans-serif;
 }
+
 .pause-cartable-horaires,
 .pause-cartable-tarifs-list {
   list-style: none;
   padding: 0;
   margin: 0 0 1.2rem 0;
 }
+
 .pause-cartable-horaires li,
 .pause-cartable-tarifs-list li {
   font-size: 1.13rem;
@@ -1332,26 +1475,31 @@ figcaption {
   margin-bottom: 0.5rem;
   letter-spacing: 0.01em;
 }
+
 .pause-cartable-horaires li strong {
   color: #3a7bd5;
 }
+
 .pause-cartable-tarifs {
   font-size: 1.08rem;
   color: #b94a2c;
   margin-bottom: 0.5rem;
   font-style: italic;
 }
+
 .tarif-detail {
   color: #3a7bd5;
   font-size: 0.98em;
   margin-left: 0.3em;
   font-style: italic;
 }
+
 @media (max-width: 600px) {
   .pause-cartable-section {
     padding: 1.2rem 0.5rem;
     max-width: 98vw;
   }
+
   .pause-cartable-title {
     font-size: 1.5rem;
   }
@@ -1364,6 +1512,7 @@ figcaption {
   align-items: center;
   margin: 2.5rem auto 3rem auto;
 }
+
 .carousel-container {
   display: flex;
   align-items: center;
@@ -1375,6 +1524,7 @@ figcaption {
   max-width: 420px;
   position: relative;
 }
+
 .carousel-images {
   width: 260px;
   height: 180px;
@@ -1384,6 +1534,7 @@ figcaption {
   justify-content: center;
   position: relative;
 }
+
 .carousel-img {
   display: none;
   width: 100%;
@@ -1393,14 +1544,17 @@ figcaption {
   box-shadow: 0 2px 12px #3a7bd511;
   transition: opacity 0.4s;
   position: absolute;
-  left: 0; top: 0;
+  left: 0;
+  top: 0;
   cursor: pointer;
 }
+
 .carousel-img.active {
   display: block;
   opacity: 1;
   z-index: 2;
 }
+
 .carousel-btn {
   background: #3a7bd5;
   color: #fff;
@@ -1417,15 +1571,18 @@ figcaption {
   align-items: center;
   justify-content: center;
 }
+
 .carousel-btn:hover {
   background: #145db2;
 }
+
 .carousel-dots {
   display: flex;
   justify-content: center;
   gap: 0.7rem;
   margin-top: 1rem;
 }
+
 .dot {
   width: 12px;
   height: 12px;
@@ -1435,14 +1592,17 @@ figcaption {
   transition: background 0.2s;
   cursor: pointer;
 }
+
 .dot.active {
   background: #3a7bd5;
 }
+
 @media (max-width: 600px) {
   .carousel-container {
     max-width: 98vw;
     padding: 1rem 0.2rem;
   }
+
   .carousel-images {
     width: 98vw;
     max-width: 260px;
@@ -1459,14 +1619,16 @@ figcaption {
   top: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(30,40,60,0.85);
+  background: rgba(30, 40, 60, 0.85);
   justify-content: center;
   align-items: center;
   transition: opacity 0.2s;
 }
+
 .carousel-modal[style*="display: flex"] {
   display: flex !important;
 }
+
 .carousel-modal-img {
   max-width: 90vw;
   max-height: 85vh;
@@ -1476,10 +1638,19 @@ figcaption {
   padding: 1rem;
   animation: modalZoomIn 0.2s;
 }
+
 @keyframes modalZoomIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
+
 .carousel-modal-close {
   position: absolute;
   top: 3vh;
@@ -1494,6 +1665,7 @@ figcaption {
   background: none;
   border: none;
 }
+
 .carousel-modal-close:hover {
   color: #ff0000;
 }
@@ -1507,6 +1679,7 @@ figcaption {
   padding: 2.2rem 1.5rem 2rem 1.5rem;
   text-align: center;
 }
+
 .pause-cartable-texte-title {
   color: #2476a6;
   font-family: 'Montserrat', cursive, Arial, sans-serif;
@@ -1515,6 +1688,7 @@ figcaption {
   letter-spacing: 0.03em;
   font-weight: 700;
 }
+
 .pause-cartable-texte-slogan {
   color: #1e88a8;
   font-size: 1.15rem;
@@ -1522,39 +1696,144 @@ figcaption {
   font-style: italic;
   line-height: 1.6;
 }
+
 .pause-cartable-texte-horaires {
   color: #444;
   font-size: 1.13rem;
   margin-bottom: 1.2rem;
   line-height: 1.5;
 }
+
 .pause-cartable-texte-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .pause-cartable-texte-list li {
   color: #444;
   font-size: 1.08rem;
   margin-bottom: 0.7rem;
   line-height: 1.5;
 }
+
 .pause-cartable-texte-list strong {
   color: #2476a6;
 }
+
 @media (max-width: 600px) {
   .pause-cartable-texte {
     padding: 1.2rem 0.5rem;
     max-width: 98vw;
   }
+
   .pause-cartable-texte-title {
     font-size: 1.3rem;
   }
 }
+
 .maj-info {
   color: #888;
   font-size: 0.98rem;
   margin-top: 0.7em;
   font-style: italic;
   text-align: center;
+}
+
+.activites-familles {
+  padding: 2rem;
+  background: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+.activites-familles h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1.5rem;
+  color: #2b7a4b;
+}
+
+.activites-familles article {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #ffffff;
+  border-left: 5px solid #2b7a4b;
+  border-radius: 8px;
+}
+
+.activites-familles h3 {
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.activites-familles ul {
+  padding-left: 1rem;
+}
+
+.activites-familles li {
+  margin-bottom: 0.8rem;
+}
+
+.vacances {
+  background: #fff5d1;
+  padding: 1rem;
+  border-left: 5px solid #f1b100;
+  border-radius: 8px;
+}
+
+body.adultes-page {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background: #fdfdfd;
+  color: #333;
+}
+
+main.adultes-main {
+  padding: 2rem;
+}
+
+h1.adultes-title,
+h2.adultes-subtitle,
+h3.adultes-day {
+  color: #2b7a4b;
+}
+
+section.adultes-section {
+  margin-bottom: 2rem;
+}
+
+article.adultes-jour {
+  background: #ffffff;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #2b7a4b;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+ul.adultes-liste {
+  padding-left: 1.5rem;
+}
+
+li.adultes-activite {
+  margin-bottom: 0.5rem;
+}
+
+.adultes-tarifs,
+.adultes-plus {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.adultes-tarifs ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.adultes-tarifs li {
+  margin-bottom: 0.5rem;
 }

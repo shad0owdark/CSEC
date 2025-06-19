@@ -1291,3 +1291,270 @@ figcaption {
 .indev a:hover {
   border-color: transparent;
 }
+
+.pause-cartable-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px #3a7bd522;
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 4rem auto 3rem auto;
+  max-width: 420px;
+  text-align: center;
+}
+.pause-cartable-title {
+  font-family: 'Montserrat', cursive, Arial, sans-serif;
+  color: #b94a2c;
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
+.pause-cartable-content h3 {
+  color: #222;
+  font-size: 1.25rem;
+  margin: 1.2rem 0 0.7rem 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.pause-cartable-horaires,
+.pause-cartable-tarifs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem 0;
+}
+.pause-cartable-horaires li,
+.pause-cartable-tarifs-list li {
+  font-size: 1.13rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+.pause-cartable-horaires li strong {
+  color: #3a7bd5;
+}
+.pause-cartable-tarifs {
+  font-size: 1.08rem;
+  color: #b94a2c;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+.tarif-detail {
+  color: #3a7bd5;
+  font-size: 0.98em;
+  margin-left: 0.3em;
+  font-style: italic;
+}
+@media (max-width: 600px) {
+  .pause-cartable-section {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .pause-cartable-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Styles pour le carrousel d'images moderne et responsive */
+.carousel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.5rem auto 3rem auto;
+}
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #3a7bd522;
+  padding: 1.5rem 1rem;
+  max-width: 420px;
+  position: relative;
+}
+.carousel-images {
+  width: 260px;
+  height: 180px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.carousel-img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #3a7bd511;
+  transition: opacity 0.4s;
+  position: absolute;
+  left: 0; top: 0;
+  cursor: pointer;
+}
+.carousel-img.active {
+  display: block;
+  opacity: 1;
+  z-index: 2;
+}
+.carousel-btn {
+  background: #3a7bd5;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin: 0 0.7rem;
+  box-shadow: 0 2px 8px #3a7bd522;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-btn:hover {
+  background: #145db2;
+}
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.dot.active {
+  background: #3a7bd5;
+}
+@media (max-width: 600px) {
+  .carousel-container {
+    max-width: 98vw;
+    padding: 1rem 0.2rem;
+  }
+  .carousel-images {
+    width: 98vw;
+    max-width: 260px;
+    height: 140px;
+  }
+}
+
+/* Styles pour la modale d'image du carrousel */
+.carousel-modal {
+  display: none;
+  position: fixed;
+  z-index: 1002;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30,40,60,0.85);
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+.carousel-modal[style*="display: flex"] {
+  display: flex !important;
+}
+.carousel-modal-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px #0008;
+  background: #fff;
+  padding: 1rem;
+  animation: modalZoomIn 0.2s;
+}
+@keyframes modalZoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.carousel-modal-close {
+  position: absolute;
+  top: 3vh;
+  right: 4vw;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1003;
+  font-weight: bold;
+  text-shadow: 0 2px 8px #000a;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+}
+.carousel-modal-close:hover {
+  color: #ff0000;
+}
+
+.pause-cartable-texte {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #3a7bd522;
+  max-width: 500px;
+  margin: 2.5rem auto 3rem auto;
+  padding: 2.2rem 1.5rem 2rem 1.5rem;
+  text-align: center;
+}
+.pause-cartable-texte-title {
+  color: #2476a6;
+  font-family: 'Montserrat', cursive, Arial, sans-serif;
+  font-size: 2.1rem;
+  margin-bottom: 1.1rem;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
+.pause-cartable-texte-slogan {
+  color: #1e88a8;
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+.pause-cartable-texte-horaires {
+  color: #444;
+  font-size: 1.13rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+.pause-cartable-texte-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pause-cartable-texte-list li {
+  color: #444;
+  font-size: 1.08rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+.pause-cartable-texte-list strong {
+  color: #2476a6;
+}
+@media (max-width: 600px) {
+  .pause-cartable-texte {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .pause-cartable-texte-title {
+    font-size: 1.3rem;
+  }
+}
+.maj-info {
+  color: #888;
+  font-size: 0.98rem;
+  margin-top: 0.7em;
+  font-style: italic;
+  text-align: center;
+}

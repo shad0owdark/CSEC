@@ -386,5 +386,17 @@
     "end": "2025-06-20T11:30:00",
     "secteur": "Adultes",
     "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-07-08T10:00:00",
+    "end": "2025-07-08T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-07-10T14:00:00",
+    "end": "2025-07-10T17:00:00",
+    "description": ""
   }
 ]

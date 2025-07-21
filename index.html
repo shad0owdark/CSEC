@@ -43,7 +43,6 @@
           <ul class="submenu">
             <li><a href="enfance.html">Enfance</a></li>
             <li><a href="jeunes.html">Jeunes</a></li>
-            <li><a href="familles.html">Familles</a></li>
             <li><a href="adultes.html">Adultes</a></li>
           </ul>
         </li>
@@ -159,6 +158,15 @@
     <script async defer crossorigin="anonymous"
       src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v19.0"></script>
 
+    <section class="video-section">
+      <h2>Découvrez notre vidéo</h2>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/2yJgwwDcgV8" title="Présentation Espace Carnot" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
     <div id="modal-guide" class="modal-guide">
       <span class="modal-close" id="modal-close">&times;</span>
       <img id="modal-img" src="" alt="Guide en grand">
@@ -168,7 +176,7 @@
       <div class="modal-event-content" id="modal-event-content"></div>
     </div>
 
-    <p class="maj-info">Dernière mise à jour le 19 juin 2025</p>
+    <p class="maj-info">Dernière mise à jour le 21 juillet 2025</p>
 
   </main>
 
@@ -353,6 +361,24 @@
   `;
       document.getElementById('modal-event').classList.add('open');
     }
+  </script>
+  <script>
+    // Remplace cette valeur par ton Facebook Page ID ou nom d'utilisateur
+    const pageId = "espace.carnot";
+    const accessToken = ""; // Laisse vide pour public data
+
+    fetch(`https://graph.facebook.com/v19.0/${pageId}?fields=followers_count&access_token=${accessToken}`)
+      .then(response => response.json())
+      .then(data => {
+        if (data.followers_count) {
+          document.getElementById("facebook-followers").textContent = data.followers_count + " followers";
+        } else {
+          document.getElementById("facebook-followers").style.display = "none";
+        }
+      })
+      .catch(() => {
+        document.getElementById("facebook-followers").style.display = "none";
+      });
   </script>
 </body>
 

@@ -308,7 +308,7 @@ section.equipe-centre {
     border-radius: 0 0 10px 10px;
   }
 
-  .facebook-feed-modern .fb-page,
+  .facebook-feed-modern,
   .facebook-feed-modern iframe {
     max-width: 98vw !important;
     width: 100% !important;
@@ -783,6 +783,15 @@ figcaption {
   }
 }
 
+.facebook-followers {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  letter-spacing: 0.01em;
+}
+
 .facebook-embed {
   max-width: 900px;
   margin: 2.5rem auto 2rem auto;
@@ -869,23 +878,17 @@ figcaption {
   justify-content: center;
   align-items: center;
   min-width: 0;
+  min-height: 800px;
+  overflow: visible;
 }
 
 .facebook-feed-modern .fb-page {
+  min-height: 800px !important;
   width: 100% !important;
-  min-width: 320px !important;
   max-width: 700px !important;
   margin: 0 auto !important;
   display: flex;
   justify-content: center;
-}
-
-.facebook-feed-modern iframe {
-  width: 100% !important;
-  min-width: 320px !important;
-  max-width: 700px !important;
-  margin: 0 auto !important;
-  display: block;
 }
 
 .btn-inscription {
@@ -1836,4 +1839,42 @@ li.adultes-activite {
 
 .adultes-tarifs li {
   margin-bottom: 0.5rem;
+}
+
+.video-section {
+  background: #f7faff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #1877f322;
+  padding: 1rem 1.5rem 2.5rem 1.5rem;
+  margin: 3rem auto 2.5rem auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+.video-section h2 {
+  color: #3a7bd5;
+  font-size: 1.6rem;
+  margin-bottom: 1.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-bottom: 56.25%; /* ratio 16:9 */
+  height: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px #3a7bd522;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+  border-radius: 14px;
 }

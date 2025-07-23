@@ -1938,3 +1938,48 @@ li.adultes-activite {
   padding: 1rem 0;
 }
 
+.service-section {
+  padding: 2rem;
+  background: #f8f9fb;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-title {
+  color: #5e60ce;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tarif-table {
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.tarif-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.tarif-table th,
+.tarif-table td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.tarif-table th {
+  background-color: #5e60ce;
+  color: white;
+}
+
+.horaires {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.horaires ul {
+  list-style: none;
+  padding-left: 0;
+}

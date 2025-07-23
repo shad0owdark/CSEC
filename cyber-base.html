@@ -61,18 +61,168 @@
         </nav>
     </header>
     <main>
-        <section class="indev">
-            <h1>Page en cours de développement</h1>
-            <p>Nous travaillons dur pour vous offrir le meilleur contenu possible. Revenez bientôt pour plus
-                d'informations
-                !</p>
-            <p>En attendant, n'hésitez pas à explorer les autres sections du site.</p>
+        <section class="cyberbase">
+            <div class="cyberbase-intro">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2>La médiation numérique</h2>
+                        <p class="slogan">Accessible à tous, sans adhésion</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="cyberbase-horaires">
+                <h3>Horaires d'ouverture</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Jour</th>
+                            <th>Matin</th>
+                            <th>Après-midi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lundi</td>
+                            <td>8h30 - 12h00</td>
+                            <td>13h30 - 17h30</td>
+                        </tr>
+                        <tr>
+                            <td>Mardi</td>
+                            <td>8h30 - 12h00</td>
+                            <td>13h30 - 17h30</td>
+                        </tr>
+                        <tr>
+                            <td>Mercredi</td>
+                            <td>8h30 - 12h00</td>
+                            <td>13h30 - 17h30</td>
+                        </tr>
+                        <tr>
+                            <td>Jeudi</td>
+                            <td>8h30 - 12h00</td>
+                            <td>13h30 - 17h30</td>
+                        </tr>
+                        <tr>
+                            <td>Vendredi</td>
+                            <td>8h30 - 12h00</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-            <p>Merci de votre patience et de votre compréhension !</p>
-            <p>Pour toute question ou suggestion, vous pouvez contactez le <a href="tel:0321103110">03 21 10 31 10</a> ou
-                rendez-vous sur <a href="https://www.facebook.com/espace.carnot/">Facebook</a>.</p>
+            <div class="cyberbase-besoins">
+                <h3>Vous avez besoin...</h3>
+                <ul>
+                    <li>👉 d’une aide occasionnelle</li>
+                    <li>💻 d’utiliser du matériel informatique</li>
+                    <li>📱 d’apprendre à utiliser votre ordinateur, votre téléphone, votre tablette, Internet...</li>
+                    <li>🧾 d’aide pour vos démarches administratives en ligne</li>
+                </ul>
+                <p class="message">L’équipe de la Cyber Base est là pour vous accompagner selon vos besoins.<br>
+                    <strong>N’hésitez pas à la rencontrer !</strong>
+                </p>
+            </div>
         </section>
+
+        <style>
+            .cyberbase {
+                padding: 2em;
+                background: linear-gradient(135deg, #e9ecf3, #f7f9fb);
+                color: #333;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .cyberbase-intro .intro-content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                border-bottom: 2px solid #ccc;
+                padding-bottom: 1em;
+            }
+
+            .cyberbase-intro h2 {
+                color: #5e60ce;
+                font-size: 2.2em;
+                margin: 0;
+            }
+
+            .cyberbase-intro .slogan {
+                color: #6a6a6a;
+                margin-top: 0.5em;
+            }
+
+            .cyberbase-logo {
+                max-width: 150px;
+                height: auto;
+                margin-top: 1em;
+            }
+
+            .cyberbase-horaires h3,
+            .cyberbase-besoins h3 {
+                font-size: 1.6em;
+                color: #5e60ce;
+                margin-top: 2em;
+                border-bottom: 2px solid #5e60ce;
+                padding-bottom: 0.5em;
+            }
+
+            .cyberbase-horaires table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 1em;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+                overflow: hidden;
+            }
+
+            .cyberbase-horaires th,
+            .cyberbase-horaires td {
+                padding: 0.8em;
+                text-align: center;
+                border-bottom: 1px solid #eee;
+            }
+
+            .cyberbase-horaires thead {
+                background-color: #5e60ce;
+                color: #fff;
+            }
+
+            .cyberbase-besoins ul {
+                margin: 1em 0;
+                padding-left: 1em;
+                list-style: none;
+            }
+
+            .cyberbase-besoins li {
+                margin: 0.5em 0;
+                font-size: 1.1em;
+            }
+
+            .cyberbase-besoins .message {
+                margin-top: 1em;
+                font-size: 1.2em;
+                color: #444;
+                line-height: 1.5em;
+            }
+
+            .cyberbase-photos {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 1em;
+                margin-top: 2em;
+            }
+
+            .cyberbase-photos img {
+                width: 100%;
+                height: auto;
+                border-radius: 12px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+
     </main>
     <footer>
         <div class="footer-contact">

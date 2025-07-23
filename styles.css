@@ -16,12 +16,70 @@ main {
 }
 
 footer {
-  flex-shrink: 0;
-  background: #f7faff;
+  background: #3a7bd5;
+  color: #fff;
   text-align: center;
-  padding: 1.2em 0 0.7em 0;
-  color: #3a7bd5;
-  font-size: 1.1em;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-contact, .footer-links {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-contact {
+  background: none;
+  box-shadow: none;
+  color: inherit;
+}
+
+
+.footer-contact h3,
+.footer-links h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 0.4em 0;
+}
+
+.footer-links a,
+.footer-contact a {
+  color: #9dc6ff;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-icon {
+  margin-right: 0.5em;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 0.85em;
+  color: #ffffff;
 }
 
 body {
@@ -220,15 +278,6 @@ main {
   max-width: 180px;
   width: 100%;
   height: auto;
-}
-
-footer {
-  background: #3a7bd5;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
-  font-size: 1rem;
 }
 
 .bandeau-financeurs {
@@ -783,180 +832,236 @@ figcaption {
   }
 }
 
-.facebook-followers {
-  font-size: 1.1rem;
+/* WOW Service Civique Modern */
+.wow-hero {
+  position: relative;
+  background: linear-gradient(120deg, #f3ff46 0%, #f4845f 50%, #3a7bd5 100%);
+  border-radius: 32px;
+  box-shadow: 0 12px 48px #3a7bd555, 0 0 0 12px #fff3 inset;
+  padding: 3.5em 2.5em 2.8em 2.5em;
+  margin: 3em auto 2em auto;
+  max-width: 1200px;
   color: #fff;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  margin-top: 0.2rem;
-  letter-spacing: 0.01em;
-}
-
-.facebook-embed {
-  max-width: 900px;
-  margin: 2.5rem auto 2rem auto;
-  text-align: center;
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 2px 16px #0001;
-  padding: 2rem 1rem 2.2rem 1rem;
-}
-
-.facebook-embed-modern {
-  max-width: 700px;
-  margin: 3rem auto 2.5rem auto;
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 8px 32px #1877f322, 0 1.5px 8px #0001;
-  padding: 0 0 2rem 0;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  z-index: 1;
+  animation: wowFadeIn 1s cubic-bezier(.4,0,.2,1);
 }
 
-.facebook-banner-top {
+@keyframes wowFadeIn {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: none;}
+}
+
+.wow-bg-glow {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 260px;
+  background: radial-gradient(circle at 50% 40%, #fff9 0%, #fff0 80%);
+  filter: blur(32px);
+  opacity: 0.7;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.wow-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #fff6 0%, #f7b267cc 60%, #3a7bd5cc 100%);
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 1.2em;
+  padding: 0.25em 1.1em;
+  margin-left: 0.7em;
+  vertical-align: middle;
+  box-shadow: 0 2px 12px #fff7;
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 6px #fff9;
+  animation: wowPop 1.2s cubic-bezier(.4,0,.2,1);
+}
+
+@keyframes wowPop {
+  0% { transform: scale(0.7);}
+  60% { transform: scale(1.15);}
+  100% { transform: scale(1);}
+}
+
+.wow-intro p {
+  font-size: 1.28rem;
+  line-height: 1.9;
+  color: #fff;
+  margin-bottom: 1.3em;
+  text-shadow: 0 2px 16px #0002, 0 1px 0 #fff3;
+  font-family: 'Montserrat', Arial, sans-serif;
+  animation: wowFadeIn 1.2s cubic-bezier(.4,0,.2,1);
+}
+
+.wow-emoji {
+  font-size: 1.5em;
+  margin-right: 0.2em;
+  filter: drop-shadow(0 2px 8px #fff7);
+}
+
+.wow-info {
+  background: rgba(255, 255, 255, 0.18);
+  border-left: 6px solid #fff;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.13rem;
+  font-weight: 600;
+  margin: 1.5em 0 1.5em 0;
+  padding: 1.1em 1.3em;
+  box-shadow: 0 4px 24px #fff2;
+  text-align: left;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  background: linear-gradient(90deg, #1877f3 80%, #3a7bd5 100%);
-  color: #fff;
-  padding: 2.2rem 2rem 2.2rem 2rem;
-  border-radius: 18px 18px 0 0;
+  gap: 0.7em;
+  animation: wowFadeIn 1.4s cubic-bezier(.4,0,.2,1);
+}
+
+.wow-volontaires {
+  margin: 2.5em auto 1.5em auto;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px #3a7bd522;
+  padding: 2.2em 1.2em 1.7em 1.2em;
+  text-align: center;
+  position: relative;
+  animation: wowFadeIn 1.6s cubic-bezier(.4,0,.2,1);
+}
+
+.volontaires-list-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #3a7bd5;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.3em;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-shadow: 0 2px 8px #fff8;
+}
+
+.wow-volontaires ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
   justify-content: center;
+  gap: 2.2em;
   flex-wrap: wrap;
 }
 
-.facebook-icon-large {
+.wow-volontaires li {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: #fff2;
-  border-radius: 50%;
-  padding: 0.5rem;
-}
-
-.facebook-banner-top h3 {
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  margin: 0 0 0.5rem 0;
-  letter-spacing: 0.01em;
-  font-weight: bold;
-}
-
-.facebook-follow-btn {
-  background: #fff;
-  color: #1877f3;
-  font-weight: 600;
-  border-radius: 8px;
-  padding: 0.7em 1.5em;
-  text-decoration: none;
-  font-size: 1.1rem;
-  display: inline-flex;
-  align-items: center;
-  transition: background 0.2s;
-  box-shadow: 0 2px 8px #1877f322;
-}
-
-.facebook-follow-btn:hover {
-  background: #145db2;
-  color: #fff
-}
-
-.sel-facebook-follow {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1em;
-}
-
-/* Agrandit le conteneur de l'embed Facebook */
-.facebook-feed-modern {
-  background: #f7faff;
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 0;
-  min-height: 800px;
-  overflow: visible;
-}
-
-.facebook-feed-modern .fb-page {
-  min-height: 800px !important;
-  width: 100% !important;
-  max-width: 700px !important;
-  margin: 0 auto !important;
-  display: flex;
-  justify-content: center;
-}
-
-.btn-inscription {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.7em 1.5em;
-  background: #3a7bd5;
-  color: #fff !important;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: background 0.2s;
-}
-
-.btn-inscription:hover {
-  background: #145db2;
-}
-
-.modal-event {
-  display: none;
-  position: fixed;
-  z-index: 1002;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(30, 40, 60, 0.85);
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.2s;
-}
-
-.modal-event.open {
-  display: flex;
-}
-
-.modal-event-content {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 32px #0008;
-  padding: 2rem 2.2rem;
-  max-width: 95vw;
-  max-height: 85vh;
-  overflow-y: auto;
+  font-size: 1.18rem;
+  font-weight: 700;
   color: #222;
-  position: relative;
+  margin-bottom: 0.7em;
+  transition: transform 0.18s;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #3a7bd522;
+  padding: 1.2em 1.1em 1em 1.1em;
+  min-width: 120px;
+  animation: wowFadeIn 1.8s cubic-bezier(.4,0,.2,1);
 }
 
-.facebook-feed-modern iframe,
-.guide-img {
-  cursor: pointer;
+.wow-volontaires li:hover {
+  transform: translateY(-7px) scale(1.07) rotate(-2deg);
+  box-shadow: 0 8px 32px #3a7bd533;
 }
 
-.home {
-  display: block;
-  text-align: center;
-  font-size: 2.1rem;
+.wow-avatar {
+  font-size: 2.7em;
+  margin-bottom: 0.3em;
+  filter: drop-shadow(0 2px 8px #3a7bd522);
+  border-radius: 50%;
+  padding: 0.2em 0.3em;
+  background: linear-gradient(135deg,#fff6,#3a7bd5cc);
+  box-shadow: 0 2px 12px #fff7;
+  border: 3px solid #fff;
+  transition: box-shadow 0.2s;
+}
+
+.wow-role-badge {
+  display: inline-block;
+  background: linear-gradient(90deg,#f3ff46 0%,#3a7bd5 100%);
+  color: #222;
+  font-size: 0.98em;
   font-weight: 600;
-  color: #145db2;
-  margin: 2em auto 1.2em auto;
-  max-width: 800px;
-  line-height: 1.35;
-  letter-spacing: 0.02em;
-  text-shadow: 0 2px 8px #1877f322;
+  border-radius: 1em;
+  padding: 0.18em 0.9em;
+  margin-top: 0.5em;
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 8px #3a7bd522;
 }
 
-/* Ajoute à styles.css */
+.wow-cta-bloc {
+  margin-top: 2.2em;
+  text-align: center;
+}
+
+.wow-cta-btn {
+  display: inline-block;
+  background: linear-gradient(90deg,#3a7bd5 0%,#f4845f 100%);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 2em;
+  padding: 1em 2.2em;
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-shadow: 0 4px 24px #3a7bd522;
+  transition: background 0.2s, transform 0.18s;
+  letter-spacing: 0.03em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  animation: wowPop 1.6s cubic-bezier(.4,0,.2,1);
+}
+
+.wow-cta-btn:hover {
+  background: linear-gradient(90deg,#f4845f 0%,#3a7bd5 100%);
+  color: #fff;
+  transform: scale(1.07);
+  box-shadow: 0 8px 32px #3a7bd533;
+}
+
+@media (max-width: 900px) {
+  .wow-hero {
+    padding: 1.5em 0.5em 1.5em 0.5em;
+    max-width: 98vw;
+  }
+
+  .wow-volontaires ul {
+    gap: 1.2em;
+  }
+}
+
+@media (max-width: 700px) {
+  .wow-hero h2 {
+    font-size: 2rem;
+  }
+
+  .wow-intro p {
+    font-size: 1.05rem;
+  }
+
+  .wow-volontaires ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em 0;
+  }
+
+  .wow-volontaires li {
+    min-width: 90px;
+    padding: 0.8em 0.6em 0.7em 0.6em;
+  }
+}
+
 .vestiaire-solidaire {
   background: #fff8fc;
   border: 3px dashed #b48be3;
@@ -1030,67 +1135,6 @@ figcaption {
   font-size: 1.3em;
   vertical-align: middle;
   margin-left: 0.2em;
-}
-
-/* Ajoute à styles.css */
-.footer-contact {
-  text-align: center;
-  margin-bottom: 1.5em;
-  background: #3a7bd5;
-  border-radius: 12px;
-  padding: 0.1em 0.1em 0.1em 0.1em;
-  box-shadow: 0 2px 12px #1877f322;
-  max-width: 350px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer-contact h3 {
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: #fff;
-  margin-bottom: 0.7em;
-}
-
-.footer-contact-info {
-  color: #ffffff;
-  font-size: 1.13rem;
-  font-family: 'Montserrat', Arial, sans-serif;
-  margin-bottom: 0.7em;
-  line-height: 1.6;
-}
-
-.footer-contact-info strong {
-  font-size: 1.18rem;
-  color: #ffffff;
-  display: block;
-  margin-bottom: 0.2em;
-}
-
-.footer-icon {
-  margin-right: 0.3em;
-  font-size: 1.1em;
-  vertical-align: middle;
-}
-
-.footer-contact-info a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-  word-break: break-all;
-}
-
-.footer-contact-info a:hover {
-  text-decoration: underline;
-}
-
-.footer-actus {
-  display: block;
-  color: #444;
-  font-size: 1em;
-  margin: 0.7em 0 0.2em 0;
 }
 
 /* Ajoute à styles.css */
@@ -1878,3 +1922,19 @@ li.adultes-activite {
   border: none;
   border-radius: 14px;
 }
+
+/* Centrage de l'embed Facebook */
+.sel-facebook-embed,
+.facebook-feed-modern,
+.fb-page,
+.sel-facebook-follow {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100%;
+}
+
+.sel-facebook-follow {
+  padding: 1rem 0;
+}
+

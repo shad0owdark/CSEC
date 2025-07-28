@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre Social Espace Carnot</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/files/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/imgs/LOGO-CAR.png">
+</head>
+
+<body>
+    <header>
+        <section class="hero">
+            <div class="hero-overlay">
+                <img src="/imgs/LOGO-CAR.png" alt="Logo Espace Carnot" class="hero-logo">
+                <h1>Bienvenue à l’Espace Carnot</h1>
+                <p>Maison des Habitants - La fabrique de Liens</p>
+            </div>
+        </section>
+        <div class="bandeau-financeurs">
+            <img src="/imgs/financeurs.jpg" alt="Nos financeurs">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">🏠 Accueil</a>
+                <li>
+                    <a href="#" onclick="return false;">🏡 Le Centre <span class="arrow">▼</span></a>
+                    <ul class="submenu">
+                        <li><a href="/HTML/Centre/le-mot-du-president.html">Le mot du président</a></li>
+                        <li><a href="/HTML/Centre/lequipe.html">L’équipe</a></li>
+                        <li><a href="/HTML/Centre/vestiaire-solidaire.html">Le vestiaire solidaire</a></li>
+                        <li><a href="/HTML/Centre/sel-du-cesc.html">Le SEL du CESC</a></li>
+                        <li><a href="/HTML/Centre/service-civique.html">Service civique</a></li>
+                        <li><a href="/HTML/Centre/reseau-parentalite.html">Réseau parentalité</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="return false;">🎯 Activités <span class="arrow">▼</span></a>
+                    <ul class="submenu">
+                        <li><a href="/HTML/Activities/enfance.html">Enfance</a></li>
+                        <li><a href="/HTML/Activities/jeunes.html">Jeunes</a></li>
+                        <li><a href="/HTML/Activities/familles.html">Familles</a></li>
+                        <li><a href="/HTML/Activities/adultes.html">Adultes</a></li>
+                        <li><a href="/HTML/Activities/carnot-danse.html">Carnot Danse</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="return false;">🛠️ Services <span class="arrow">▼</span></a>
+                    <ul class="submenu">
+                        <li><a href="laverie.html">Laverie</a></li>
+                        <li><a href="salon-de-beaute.html">Salon de beauté</a></li>
+                        <li><a href="cyber-base.html">Cyber base</a></li>
+                        <li><a href="france-services.html">France Services</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cyberbase">
+            <div class="cyberbase-intro">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2>La médiation numérique</h2>
+                        <p class="slogan">Accessible à tous, sans adhésion</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cyberbase-horaires">
+                <h3>Horaires d'ouverture</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Jour</th>
+                            <th>Matin</th>
+                            <th>Après-midi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lundi</td>
+                            <td>8h30 - 12h00</td>
+                            <td>13h30 - 17h30</td>
+                        </tr>
+                        <tr>
+                            <td>Mardi</td>
+                            <td>8h30 - 12h00</td>
+                            <td>13h30 - 17h30</td>
+                        </tr>
+                        <tr>
+                            <td>Mercredi</td>
+                            <td>8h30 - 12h00</td>
+                            <td>13h30 - 17h30</td>
+                        </tr>
+                        <tr>
+                            <td>Jeudi</td>
+                            <td>8h30 - 12h00</td>
+                            <td>13h30 - 17h30</td>
+                        </tr>
+                        <tr>
+                            <td>Vendredi</td>
+                            <td>8h30 - 12h00</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="cyberbase-besoins">
+                <h3>Vous avez besoin...</h3>
+                <ul>
+                    <li>👉 d’une aide occasionnelle</li>
+                    <li>💻 d’utiliser du matériel informatique</li>
+                    <li>📱 d’apprendre à utiliser votre ordinateur, votre téléphone, votre tablette, Internet...</li>
+                    <li>🧾 d’aide pour vos démarches administratives en ligne</li>
+                </ul>
+                <p class="message">L’équipe de la Cyber Base est là pour vous accompagner selon vos besoins.<br>
+                    <strong>N’hésitez pas à la rencontrer !</strong>
+                </p>
+            </div>
+        </section>
+
+        <style>
+            .cyberbase {
+                padding: 2em;
+                background: linear-gradient(135deg, #e9ecf3, #f7f9fb);
+                color: #333;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .cyberbase-intro .intro-content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                border-bottom: 2px solid #ccc;
+                padding-bottom: 1em;
+            }
+
+            .cyberbase-intro h2 {
+                color: #5e60ce;
+                font-size: 2.2em;
+                margin: 0;
+            }
+
+            .cyberbase-intro .slogan {
+                color: #6a6a6a;
+                margin-top: 0.5em;
+            }
+
+            .cyberbase-logo {
+                max-width: 150px;
+                height: auto;
+                margin-top: 1em;
+            }
+
+            .cyberbase-horaires h3,
+            .cyberbase-besoins h3 {
+                font-size: 1.6em;
+                color: #5e60ce;
+                margin-top: 2em;
+                border-bottom: 2px solid #5e60ce;
+                padding-bottom: 0.5em;
+            }
+
+            .cyberbase-horaires table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 1em;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+                overflow: hidden;
+            }
+
+            .cyberbase-horaires th,
+            .cyberbase-horaires td {
+                padding: 0.8em;
+                text-align: center;
+                border-bottom: 1px solid #eee;
+            }
+
+            .cyberbase-horaires thead {
+                background-color: #5e60ce;
+                color: #fff;
+            }
+
+            .cyberbase-besoins ul {
+                margin: 1em 0;
+                padding-left: 1em;
+                list-style: none;
+            }
+
+            .cyberbase-besoins li {
+                margin: 0.5em 0;
+                font-size: 1.1em;
+            }
+
+            .cyberbase-besoins .message {
+                margin-top: 1em;
+                font-size: 1.2em;
+                color: #444;
+                line-height: 1.5em;
+            }
+
+            .cyberbase-photos {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 1em;
+                margin-top: 2em;
+            }
+
+            .cyberbase-photos img {
+                width: 100%;
+                height: auto;
+                border-radius: 12px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    <p class="maj-info">Dernière mise à jour le 23 juillet 2025</p>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Nous contacter</h3>
+                <p><span class="footer-icon">📍</span> 46 Avenue du Général San Martin</p>
+                <p><span class="footer-icon">📞</span> Tel : <a href="tel:0321103110">03.21.10.31.10</a></p>
+                <p><span class="footer-icon">📧</span> Mail : <a
+                        href="mailto:contact@espacecarnot.fr">contact@espacecarnot.fr</a></p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Informations</h3>
+                <ul>
+                    <li><a href="/HTML/Footer/mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="/HTML/Footer/cgu.html">Conditions Générales d'Utilisation</a></li>
+                    <li><a href="/HTML/Footer/politique-confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="/HTML/Footer/accessibilite.html">Accessibilité</a></li>
+                    <li><a href="/HTML/Footer/documents-association.html">Documents Officiels</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Centre Social Espace Carnot — Tous droits réservés</p>
+            <p>Site conçu et développé par Gaëtan Laurent</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!-- 
+
+
+
+
+
+Site crée et développé par Gaëtan Laurent
+
+¯\_(ツ)_/¯
+
+
+
+
+
+-->

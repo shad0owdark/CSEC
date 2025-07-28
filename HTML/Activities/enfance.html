@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre Social Espace Carnot</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/files/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/imgs/LOGO-CAR.png">
+</head>
+
+<body>
+    <header>
+        <section class="hero">
+            <div class="hero-overlay">
+                <img src="/imgs/LOGO-CAR.png" alt="Logo Espace Carnot" class="hero-logo">
+                <h1>Bienvenue à l’Espace Carnot</h1>
+                <p>Maison des Habitants - La fabrique de Liens</p>
+            </div>
+        </section>
+        <div class="bandeau-financeurs">
+            <img src="/imgs/financeurs.jpg" alt="Nos financeurs">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">🏠 Accueil</a>
+                <li>
+                    <a href="#" onclick="return false;">🏡 Le Centre <span class="arrow">▼</span></a>
+                    <ul class="submenu">
+                        <li><a href="/HTML/Centre/le-mot-du-president.html">Le mot du président</a></li>
+                        <li><a href="/HTML/Centre/lequipe.html">L’équipe</a></li>
+                        <li><a href="/HTML/Centre/vestiaire-solidaire.html">Le vestiaire solidaire</a></li>
+                        <li><a href="/HTML/Centre/sel-du-cesc.html">Le SEL du CESC</a></li>
+                        <li><a href="/HTML/Centre/service-civique.html">Service civique</a></li>
+                        <li><a href="/HTML/Centre/reseau-parentalite.html">Réseau parentalité</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="return false;">🎯 Activités <span class="arrow">▼</span></a>
+                    <ul class="submenu">
+                        <li><a href="enfance.html">Enfance</a></li>
+                        <li><a href="jeunes.html">Jeunes</a></li>
+                        <li><a href="familles.html">Familles</a></li>
+                        <li><a href="adultes.html">Adultes</a></li>
+                        <li><a href="carnot-danse.html">Carnot Danse</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="return false;">🛠️ Services <span class="arrow">▼</span></a>
+                    <ul class="submenu">
+                        <li><a href="/HTML/Services/laverie.html">Laverie</a></li>
+                        <li><a href="/HTML/Services/salon-de-beaute.html">Salon de beauté</a></li>
+                        <li><a href="/HTML/Services/cyber-base.html">Cyber base</a></li>
+                        <li><a href="/HTML/Services/france-services.html">France Services</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pause-cartable-section">
+            <h2 class="pause-cartable-title">Pause Cartable</h2>
+            <div class="pause-cartable-content">
+                <h3>Horaires des cours</h3>
+                <ul class="pause-cartable-horaires">
+                    <li><strong>4 – 5 ans</strong> : le jeudi de 17h à 18h</li>
+                    <li><strong>6 – 7 ans</strong> : le mardi de 17h15 à 18h15</li>
+                    <li><strong>8 – 10 ans</strong> : le lundi de 17h15 à 18h15</li>
+                </ul>
+                <h3>Tarifs</h3>
+                <p class="pause-cartable-tarifs">Après adhésion à l'association</p>
+                <ul class="pause-cartable-tarifs-list">
+                    <li>47 € / an <span class="tarif-detail">Portelois</span></li>
+                    <li>60 € / an <span class="tarif-detail">Extérieurs</span></li>
+                </ul>
+            </div>
+        </section>
+        <section class="carousel-section">
+            <div class="carousel-container">
+                <button class="carousel-btn prev" aria-label="Image précédente">&#10094;</button>
+                <div class="carousel-images">
+                    <img src="/imgs-carrousel/1-16-1024x683.jpg" alt="Photo 1" class="carousel-img active">
+                    <img src="/imgs-carrousel/1-18-1024x683.jpg" alt="Photo 2" class="carousel-img">
+                    <img src="/imgs-carrousel/1-27-1024x683.jpg" alt="Photo 3" class="carousel-img">
+                    <img src="/imgs-carrousel/25-1-1024x683.jpg" alt="Photo 4" class="carousel-img">
+                    <img src="/imgs-carrousel/28-1-1024x683.jpg" alt="Photo 5" class="carousel-img">
+                </div>
+                <button class="carousel-btn next" aria-label="Image suivante">&#10095;</button>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+        <!-- Modal pour image agrandie -->
+        <div class="carousel-modal" id="carouselModal" aria-modal="true" role="dialog" tabindex="-1" style="display:none;">
+            <span class="carousel-modal-close" id="carouselModalClose" aria-label="Fermer">&times;</span>
+            <img class="carousel-modal-img" id="carouselModalImg" src="" alt="Image agrandie">
+        </div>
+        <div class="sel-facebook-follow">
+            <a href="https://www.facebook.com/pause.cartable.35" target="_blank" rel="noopener"
+                class="facebook-sel-follow-btn">
+                <svg width="18" height="18" viewBox="0 0 32 32" style="vertical-align:middle;margin-right:0.3em;">
+                    <circle cx="16" cy="16" r="16" fill="#1877f3" />
+                    <path
+                        d="M21.5 16.01h-3.02v8.01h-3.34v-8.01h-1.67v-2.84h1.67v-1.81c0-2.08 1.01-3.34 3.88-3.34h2.39v2.84h-1.5c-0.72 0-0.77 0.27-0.77 0.77v1.54h2.34l-0.38 2.84z"
+                        fill="white" />
+                </svg>
+                Nous suivre sur Facebook
+            </a>
+        </div>
+        <div class="sel-facebook-embed">
+            <div class="facebook-feed-modern">
+                <div class="fb-page" data-href="https://www.facebook.com/pause.cartable.35" data-tabs="timeline"
+                    data-width="700" data-height="800" data-small-header="false" data-adapt-container-width="true"
+                    data-hide-cover="true" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/pause.cartable.35" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/pause.cartable.35">Facebook</a>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <section class="pause-cartable-affiche" style="display: flex; justify-content: center; align-items: center; margin: 2.5rem 0;">
+            <img src="/imgs/affiche-pause-cartable.png" alt="Affiche Rentrée Pause Cartable" class="affiche-pause-cartable-img" style="max-width: 100%; height: auto; border-radius: 18px; box-shadow: 0 4px 32px #3a7bd522;">
+        </section>
+        <section class="pause-cartable-texte">
+            <h2 class="pause-cartable-texte-title">Pause Cartable</h2>
+            <p class="pause-cartable-texte-slogan">Travailler en s’amusant, c’est possible…<br>
+            Besoin d’un coup de pouce pour mieux comprendre, mieux apprendre ?</p>
+            <p class="pause-cartable-texte-horaires">Rejoins-nous de <strong>16h30 à 18h00</strong><br>
+            les lundis et mardis ou les jeudis et vendredis</p>
+            <ul class="pause-cartable-texte-list">
+                <li>Pour les enfants du <strong>CP au CM2</strong></li>
+                <li>Pour le groupe <strong>Camus-Pasteur</strong> (à l’école Camus)</li>
+                <li>Pour le groupe <strong>Curie-Vallois</strong> (à l’école Vallois)</li>
+            </ul>
+        </section>
+        <p class="maj-info">Dernière mise à jour le 19 juin 2025</p>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Nous contacter</h3>
+                <p><span class="footer-icon">📍</span> 46 Avenue du Général San Martin</p>
+                <p><span class="footer-icon">📞</span> Tel : <a href="tel:0321103110">03.21.10.31.10</a></p>
+                <p><span class="footer-icon">📧</span> Mail : <a
+                        href="mailto:contact@espacecarnot.fr">contact@espacecarnot.fr</a></p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Informations</h3>
+                <ul>
+                    <li><a href="/HTML/Footer/mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="/HTML/Footer/cgu.html">Conditions Générales d'Utilisation</a></li>
+                    <li><a href="/HTML/Footer/politique-confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="/HTML/Footer/accessibilite.html">Accessibilité</a></li>
+                    <li><a href="/HTML/Footer/documents-association.html">Documents Officiels</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Centre Social Espace Carnot — Tous droits réservés</p>
+            <p>Site conçu et développé par Gaëtan Laurent</p>
+        </div>
+    </footer>
+    <script>
+// Carrousel simple
+const images = document.querySelectorAll('.carousel-img');
+const dots = document.querySelectorAll('.dot');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+let current = 0;
+function showSlide(idx) {
+    images.forEach((img, i) => {
+        img.classList.toggle('active', i === idx);
+    });
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === idx);
+    });
+    current = idx;
+}
+prevBtn.addEventListener('click', () => {
+    showSlide((current - 1 + images.length) % images.length);
+});
+nextBtn.addEventListener('click', () => {
+    showSlide((current + 1) % images.length);
+});
+dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => showSlide(i));
+});
+// Modal image agrandie
+const modal = document.getElementById('carouselModal');
+const modalImg = document.getElementById('carouselModalImg');
+const modalClose = document.getElementById('carouselModalClose');
+images.forEach(img => {
+    img.addEventListener('click', () => {
+        modal.style.display = 'flex';
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+        setTimeout(() => { modal.focus(); }, 10);
+    });
+});
+modalClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalImg.src = '';
+});
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+        modalImg.src = '';
+    }
+});
+document.addEventListener('keydown', (e) => {
+    if (modal.style.display === 'flex' && (e.key === 'Escape' || e.key === 'Esc')) {
+        modal.style.display = 'none';
+        modalImg.src = '';
+    }
+});
+</script>
+<script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v19.0"></script>
+</body>
+
+</html>
+
+<!-- 
+
+
+
+
+
+Site crée et développé par Gaëtan Laurent
+
+¯\_(ツ)_/¯
+
+
+
+
+
+-->

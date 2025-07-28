@@ -1,0 +1,480 @@
+[
+  {
+    "title": "Atelier bien-être : ce soir, on sort",
+    "start": "2025-06-02T18:30:00",
+    "end": "2025-06-02T20:00:00",
+    "description": "Parents sans enfants - uniquement sur inscription.",
+    "secteur": "Adultes"
+  },
+  {
+    "title": "Mercredi en famille",
+    "start": "2025-06-04T14:30:00",
+    "end": "2025-06-04T17:00:00",
+    "description": "0-18 ans",
+    "secteur": "Familles"
+  },
+  {
+    "title": "Heure du conte",
+    "start": "2025-06-04T17:15:00",
+    "end": "2025-06-04T17:30:00",
+    "description": "0-18 ans",
+    "secteur": "Familles"
+  },
+  {
+    "title": "Harcèlement : on en parle autour d’un petit déj.",
+    "start": "2025-06-05T09:00:00",
+    "end": "2025-06-05T10:30:00",
+    "description": "Parents sans enfants",
+    "secteur": "Adultes"
+  },
+  {
+    "title": "Soirée \"Les écrans & Nos émotions\" Apéro parents/enfants",
+    "start": "2025-06-10T18:00:00",
+    "end": "2025-06-10T20:00:00",
+    "description": "15 max (6 familles) - Parents avec leur(s) enfant(s)",
+    "secteur": "Familles"
+  },
+  {
+    "title": "Bébé gym",
+    "start": "2025-06-11T10:30:00",
+    "end": "2025-06-11T11:30:00",
+    "description": "0-4 ans",
+    "secteur": "Familles"
+  },
+  {
+    "title": "Mercredi en famille",
+    "start": "2025-06-11T14:30:00",
+    "end": "2025-06-11T17:00:00",
+    "description": "0-18 ans",
+    "secteur": "Familles"
+  },
+  {
+    "title": "Heure du conte",
+    "start": "2025-06-11T17:15:00",
+    "end": "2025-06-11T17:30:00",
+    "description": "0-18 ans",
+    "secteur": "Familles"
+  },
+  {
+    "title": "Bébé massage",
+    "start": "2025-06-12T10:00:00",
+    "end": "2025-06-12T11:00:00",
+    "description": "0-1 an",
+    "secteur": "Familles"
+  },
+  {
+    "title": "Bébé musique",
+    "start": "2025-06-13T10:30:00",
+    "end": "2025-06-13T11:00:00",
+    "description": "0-3 ans",
+    "secteur": "Familles"
+  },
+  {
+    "title": "Soirée Mask Singer",
+    "start": "2025-06-13T20:30:00",
+    "end": "2025-06-13T23:30:00",
+    "description": "50 places, 3-18 ans (ramener son pique-nique, visionnage de l'émission) - À VALIDER SELON DIFFUSION TF1",
+    "secteur": "Familles et PIJ"
+  },
+  {
+    "title": "Atelier Bien-être : Yoga du rire",
+    "start": "2025-06-16T14:30:00",
+    "end": "2025-06-16T15:30:00",
+    "description": "Parents sans enfants",
+    "secteur": "Familles"
+  },
+  {
+    "title": "Atelier de Portage physiologique",
+    "start": "2025-06-16T17:00:00",
+    "end": "2025-06-16T19:00:00",
+    "description": "0-2 ans et futurs parents",
+    "secteur": "Familles"
+  },
+  {
+    "title": "Cuisine : préparons le goûter du mercredi",
+    "start": "2025-06-18T10:30:00",
+    "end": "2025-06-18T12:00:00",
+    "description": "3-18 ans",
+    "secteur": "Familles"
+  },
+  {
+    "title": "Mercredi en famille",
+    "start": "2025-06-18T14:30:00",
+    "end": "2025-06-18T17:00:00",
+    "description": "0-18 ans",
+    "secteur": "Familles"
+  },
+  {
+    "title": "Heure du conte",
+    "start": "2025-06-18T17:15:00",
+    "end": "2025-06-18T17:30:00",
+    "description": "0-18 ans",
+    "secteur": "Familles"
+  },
+  {
+    "title": "Animation championnat multisports",
+    "start": "2025-06-04T14:00:00",
+    "end": "2025-06-04T17:00:00",
+    "description": "11-17 ans (départ 13h40) Lieu de la rencontre : Vallon de Beaurepaire",
+    "secteur": "PIJ"
+  },
+  {
+    "title": "Tchoukball",
+    "start": "2025-06-11T14:00:00",
+    "end": "2025-06-11T16:30:00",
+    "description": "11-17 ans (départ 13:45)",
+    "secteur": "PIJ"
+  },
+  {
+    "title": "Goûter du PIJ",
+    "start": "2025-06-18T14:00:00",
+    "end": "2025-06-18T16:30:00",
+    "secteur": "PIJ"
+  },
+  {
+    "title": "Prise en main tablette partie 4",
+    "start": "2025-06-04T15:00:00",
+    "end": "2025-06-04T17:00:00",
+    "description": "À partir de 11 ans",
+    "secteur": "Cyber-Base"
+  },
+  {
+    "title": "Jeux Vidéos multiples",
+    "start": "2025-06-11T14:00:00",
+    "end": "2025-06-11T17:00:00",
+    "description": "À partir de 8 ans",
+    "secteur": "Cyber-Base"
+  },
+  {
+    "title": "Tournoi FC25",
+    "start": "2025-06-18T14:00:00",
+    "end": "2025-06-18T17:00:00",
+    "description": "À partir de 8 ans",
+    "secteur": "Cyber-Base"
+  },
+  {
+    "title": "Cuisine zéro gaspi",
+    "start": "2025-06-03T14:00:00",
+    "end": "2025-06-03T16:30:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Maille love",
+    "start": "2025-06-04T09:00:00",
+    "end": "2025-06-04T11:00:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Repair café",
+    "start": "2025-06-05T16:00:00",
+    "end": "2025-06-05T19:00:00",
+    "secteur": "Ecosol",
+    "description": "Ouvert à tous"
+  },
+  {
+    "title": "Jardin d'Henriville",
+    "start": "2025-06-04T10:00:00",
+    "end": "2025-06-04T11:30:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Jardin médiathèque",
+    "start": "2025-06-04T15:00:00",
+    "end": "2025-06-04T16:30:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Visite",
+    "start": "2025-06-05T14:00:00",
+    "end": "2025-06-05T16:30:00",
+    "secteur": "Ecosol",
+    "description": "Visite commentée des jardins de la colonne de la grande armée"
+  },
+  {
+    "title": "Cuisine zéro gaspi",
+    "start": "2025-06-10T14:00:00",
+    "end": "2025-06-10T16:30:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Maille love",
+    "start": "2025-06-11T09:00:00",
+    "end": "2025-06-11T11:00:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Jardin d'Henriville",
+    "start": "2025-06-11T10:00:00",
+    "end": "2025-06-11T11:30:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Jardin médiathèque",
+    "start": "2025-06-11T15:00:00",
+    "end": "2025-06-11T16:30:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Atelier chantier solidaire",
+    "start": "2025-06-12T14:30:00",
+    "end": "2025-06-12T16:00:00",
+    "secteur": "Ecosol et Adultes",
+    "description": ""
+  },
+  {
+    "title": "Jhardelot de carnot",
+    "start": "2025-06-12T09:00:00",
+    "end": "2025-06-12T11:00:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Maille love",
+    "start": "2025-06-18T09:00:00",
+    "end": "2025-06-18T11:00:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Jardin d'Henriville",
+    "start": "2025-06-18T10:00:00",
+    "end": "2025-06-18T11:30:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Jardin médiathèque",
+    "start": "2025-06-18T15:00:00",
+    "end": "2025-06-18T16:30:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Réunion des bénévoles à l'occasion",
+    "start": "2025-06-19T09:00:00",
+    "end": "2025-06-19T11:00:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Réunion sel",
+    "start": "2025-06-24T17:30:00",
+    "end": "2025-06-24T18:30:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Atelier couture",
+    "start": "2025-06-17T14:00:00",
+    "end": "2025-06-17T16:00:00",
+    "secteur": "Ecosol",
+    "description": ""
+  },
+  {
+    "title": "Café papote",
+    "start": "2025-06-02T14:00:00",
+    "end": "2025-06-02T17:00:00",
+    "secteur": "Adultes",
+    "description": ""
+  },
+  {
+    "title": "Belote",
+    "start": "2025-06-03T14:00:00",
+    "end": "2025-06-03T17:00:00",
+    "secteur": "Adultes",
+    "description": ""
+  },
+  {
+    "title": "Art créatif",
+    "start": "2025-06-04T14:30:00",
+    "end": "2025-06-04T16:00:00",
+    "secteur": "Adultes"
+  },
+  {
+    "title": "Belote",
+    "start": "2025-06-05T14:00:00",
+    "end": "2025-06-05T17:00:00",
+    "secteur": "Adultes",
+    "description": ""
+  },
+  {
+    "title": "Remuons-nous !",
+    "start": "2025-06-05T14:00:00",
+    "end": "2025-06-05T15:30:00",
+    "secteur": "Adultes",
+    "description": ""
+  },
+  {
+    "title": "Chauffe-citron",
+    "start": "2025-06-06T10:15:00",
+    "end": "2025-06-06T11:30:00",
+    "secteur": "Adultes",
+    "description": ""
+  },
+  {
+    "title": "Belote",
+    "start": "2025-06-10T14:00:00",
+    "end": "2025-06-10T17:00:00",
+    "secteur": "Adultes",
+    "description": ""
+  },
+  {
+    "title": "Belote",
+    "start": "2025-06-12T14:00:00",
+    "end": "2025-06-12T17:00:00",
+    "secteur": "Adultes",
+    "description": ""
+  },
+  {
+    "title": "Remuons-nous !",
+    "start": "2025-06-12T14:00:00",
+    "end": "2025-06-12T15:30:00",
+    "secteur": "Adultes",
+    "description": ""
+  },
+  {
+    "title": "Découverte de la Switch",
+    "start": "2025-06-13T10:00:00",
+    "end": "2025-06-13T11:30:00",
+    "secteur": "Adultes",
+    "description": ""
+  },
+  {
+    "title": "Café papote",
+    "start": "2025-06-16T14:00:00",
+    "end": "2025-06-16T17:00:00",
+    "secteur": "Adultes",
+    "description": ""
+  },
+  {
+    "title": "Belote",
+    "start": "2025-06-17T14:00:00",
+    "end": "2025-06-17T17:00:00",
+    "secteur": "Adultes",
+    "description": ""
+  },
+  {
+    "title": "Art créatif",
+    "start": "2025-06-18T14:30:00",
+    "end": "2025-06-18T16:00:00",
+    "secteur": "Adultes"
+  },
+  {
+    "title": "Belote",
+    "start": "2025-06-19T14:00:00",
+    "end": "2025-06-19T17:00:00",
+    "secteur": "Adultes",
+    "description": ""
+  },
+  {
+    "title": "Remuons-nous !",
+    "start": "2025-06-19T12:00:00",
+    "end": "2025-06-19T17:00:00",
+    "secteur": "Adultes"
+  },
+  {
+    "title": "Chauffe-citron",
+    "start": "2025-06-20T10:15:00",
+    "end": "2025-06-20T11:30:00",
+    "secteur": "Adultes",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-07-08T10:00:00",
+    "end": "2025-07-08T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-07-10T14:00:00",
+    "end": "2025-07-10T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-07-15T14:00:00",
+    "end": "2025-07-15T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-07-17T14:00:00",
+    "end": "2025-07-17T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-07-22T14:00:00",
+    "end": "2025-07-22T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-07-24T14:00:00",
+    "end": "2025-07-24T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-07-29T14:00:00",
+    "end": "2025-07-29T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-07-31T10:00:00",
+    "end": "2025-07-31T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-08-05T14:00:00",
+    "end": "2025-08-05T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-08-07T14:00:00",
+    "end": "2025-08-07T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-08-12T14:00:00",
+    "end": "2025-08-12T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-08-14T14:00:00",
+    "end": "2025-08-14T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-08-19T14:00:00",
+    "end": "2025-08-19T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-08-21T14:00:00",
+    "end": "2025-08-21T17:00:00",
+    "description": ""
+  },
+  {
+    "title": "Hors les Murs",
+    "start": "2025-08-26T10:00:00",
+    "end": "2025-08-26T17:00:00",
+    "description": ""
+  }
+]
